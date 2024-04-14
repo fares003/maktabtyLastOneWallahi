@@ -2,17 +2,18 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import "../style/home.css"
+import { Link } from 'react-router-dom';
 function NavBar() {
 
   return (
     <>
       <Navbar  className='navegator'> 
         <Container>
-          <Navbar.Brand href="#home">Maktabty</Navbar.Brand>
+          <Link to="/" className='navbar-brand'>Maktabty</Link>
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
+            <Link to="/" className='nav-link'>Home</Link>
+            <Link to="/products" className='nav-link'>All books</Link>
+            <Link to="/cart" className='nav-link'>Cart</Link>
           </Nav>
         </Container>
       </Navbar>
