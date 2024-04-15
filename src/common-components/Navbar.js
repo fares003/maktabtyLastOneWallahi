@@ -7,7 +7,7 @@ function NavBar() {
 
   return (
     <>
-      <Navbar  className='navegator'> 
+      <Navbar fixed="top" className='navegator'> 
         <Container>
           <Link to="/" className='navbar-brand'>Maktabty</Link>
           <Nav className="me-auto">
