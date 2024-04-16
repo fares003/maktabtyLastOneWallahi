@@ -17,6 +17,7 @@
     color: var(--main-color-alt) !important;
     transition: var(--main-transition);
 }
+
 .landing-container{
     background-color: var(--main-color);
     height: 600px;
@@ -26,7 +27,7 @@
     align-items: center;
     z-index: 1;
     color: var(--section-background);
-    background-image: url(/src/common-components/library-img.jpg);
+    background-image: url(/src/common-components/images/library-img.jpg);
     background-size: cover;
     position: relative;
     
@@ -56,16 +57,18 @@ z-index: -1;
 }
 .coll1{
     height: 100%;
-background-image: url(/src/common-components/image\ 2.png);
+background-image: url(/src/common-components/images/image\ 2.png);
 background-size: cover;
 background-color: transparent;
 
 }
 
-
+.row{
+    padding-top: 60px;
+}
 .triangle{
     height: 100%;
-    background-image: url(/src/common-components/pexels-ricky-esquivel-1907785.jpg);
+    background-image: url(/src/common-components/images/pexels-ricky-esquivel-1907785.jpg);
     background-size: contain;
     clip-path: polygon(100% 0, 0% 100%, 100% 100%);
 overflow: hidden;

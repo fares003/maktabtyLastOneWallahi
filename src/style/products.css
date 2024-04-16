@@ -206,7 +206,6 @@ a{
   opacity: 0;
 }
 
-
 @keyframes marquee {
   0% {
     transform: translateX(var(--start));

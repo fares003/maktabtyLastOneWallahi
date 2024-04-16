@@ -8,6 +8,7 @@ import "../style/product.css"
 import Image from 'react-bootstrap/Image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
+import Reviews from "./Reviews";
 
 function Product() {
     let params = useParams();
@@ -63,6 +64,7 @@ function Product() {
                         <p className="publ"><span>Publisher:</span> {product.volumeInfo.publisher}</p>
                         <p>First published at {product.volumeInfo.publishedDate}</p>
                         <p>{product.volumeInfo.pageCount} pages</p>
+                        <Reviews productId={params.id}/>
                     </Col>
                 </Row>
             </Container>

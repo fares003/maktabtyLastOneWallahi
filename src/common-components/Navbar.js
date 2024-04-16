@@ -15,6 +15,12 @@ function NavBar() {
             <Link to="/products" className='nav-link'>All books</Link>
             <Link to="/cart" className='nav-link'>Cart</Link>
           </Nav>
+          <Nav>
+            <Link to="/login" className='nav-link'>Log in</Link>
+            <Link eventKey={2} to="/signup" className='nav-link'>
+              Signup
+            </Link>
+          </Nav>
         </Container>
       </Navbar>
 

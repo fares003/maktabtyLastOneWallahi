@@ -1,8 +1,4 @@
 import { useTypingEffect } from "../hook/typing-effect";
-import image1 from "./pexels-ricky-esquivel-1907785.jpg"
-import Image from 'react-bootstrap/Image';
-import Button from 'react-bootstrap/Button';
-
 function Landing(){
     const text=useTypingEffect("Welcome in Maktabty, your favorite books with best price",200);
     return(<>

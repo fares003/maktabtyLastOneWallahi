@@ -1,0 +1,2553 @@
+{
+    "kind": "books#volumes",
+    "totalItems": 567,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "Iv1wDwAAQBAJ",
+        "etag": "XsNW6tgmNqY",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/Iv1wDwAAQBAJ",
+        "volumeInfo": {
+          "title": "Hands-On Design Patterns with React Native",
+          "subtitle": "Proven techniques and patterns for efficient native mobile development with JavaScript",
+          "authors": [
+            "Mateusz Grzesiukiewicz"
+          ],
+          "publisher": "Packt Publishing Ltd",
+          "publishedDate": "2018-09-29",
+          "description": "Learn how to write cross platform React Native code by using effective design patterns in the JavaScript world. Get to know industry standard patterns as well as situational patterns. Decouple your application with these set of “Idea patterns”. Key FeaturesMobile development in React Native should be done in a reusable way. Learn how to build scalable applications using JavaScript patterns that are battle tested.Try effective techniques on your own using over 80 standalone examples.Book Description React Native helps developers reuse code across different mobile platforms like iOS and Android. This book will show you effective design patterns in the React Native world and will make you ready for professional development in big teams. The book will focus only on the patterns that are relevant to JavaScript, ECMAScript, React and React Native. However, you can successfully transfer a lot of the skills and techniques to other languages. I call them “Idea patterns”. This book will start with the most standard development patterns in React like component building patterns, styling patterns in React Native and then extend these patterns to your mobile application using real world practical examples. Each chapter comes with full, separate source code of applications that you can build and run on your phone. The book is also diving into architectural patterns. Especially how to adapt MVC to React environment. You will learn Flux architecture and how Redux is implementing it. Each approach will be presented with its pros and cons. You will learn how to work with external data sources using libraries like Redux thunk and Redux Saga. The end goal is the ability to recognize the best solution for a given problem for your next mobile application. What you will learnExplore the design Patterns in React NativeLearn the best practices for React Native developmentExplore common React patterns that are highly used within React Native developmentLearn to decouple components and use dependency injection in your applicationsExplore the best ways of fetching data from the backend systemsLearn the styling patterns and how to implement custom mobile designsExplore the best ways to organize your application code in big codebasesWho this book is for The ideal target audience for this book are people eager to learn React Native design patterns who already know the basics of JavaScript. We can assume that the target audience already knows how to write Hello World in JavaScript and know what are the functions, recursive functions, JavaScript types and loops.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9781788999540"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "1788999541"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": true
+          },
+          "pageCount": 297,
+          "printType": "BOOK",
+          "categories": [
+            "Computers"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": true,
+          "contentVersion": "0.1.1.0.preview.3",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=Iv1wDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=Iv1wDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com.eg/books?id=Iv1wDwAAQBAJ&printsec=frontcover&dq=react&hl=&cd=1&source=gbs_api",
+          "infoLink": "https://play.google.com/store/books/details?id=Iv1wDwAAQBAJ&source=gbs_api",
+          "canonicalVolumeLink": "https://play.google.com/store/books/details?id=Iv1wDwAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "EG",
+          "saleability": "FOR_SALE",
+          "isEbook": true,
+          "listPrice": {
+            "amount": 1267.69,
+            "currencyCode": "EGP"
+          },
+          "retailPrice": {
+            "amount": 1267.69,
+            "currencyCode": "EGP"
+          },
+          "buyLink": "https://play.google.com/store/books/details?id=Iv1wDwAAQBAJ&rdid=book-Iv1wDwAAQBAJ&rdot=1&source=gbs_api",
+          "offers": [
+            {
+              "finskyOfferType": 1,
+              "listPrice": {
+                "amountInMicros": 1267690000,
+                "currencyCode": "EGP"
+              },
+              "retailPrice": {
+                "amountInMicros": 1267690000,
+                "currencyCode": "EGP"
+              }
+            }
+          ]
+        },
+        "accessInfo": {
+          "country": "EG",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": true
+          },
+          "pdf": {
+            "isAvailable": true
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=Iv1wDwAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "This book will show you effective design patterns in the React Native world and will make you ready for professional development in big teams."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "pXuUEAAAQBAJ",
+        "etag": "8nI1wjdVUEc",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/pXuUEAAAQBAJ",
+        "volumeInfo": {
+          "title": "Professional React Native",
+          "subtitle": "Expert techniques and solutions for building high-quality, cross-platform, production-ready apps",
+          "authors": [
+            "Alexander Benedikt Kuttig"
+          ],
+          "publisher": "Packt Publishing Ltd",
+          "publishedDate": "2022-10-31",
+          "description": "Learn how React Native works under the hood and what this means for building large-scale, cross-platform, production-ready applications without compromising on the quality and performance Key FeaturesExplore a modern approach to React Native, covering state management, animations, gestures, and moreImplement best practices and practical techniques for creating large-scale, production-ready appsCreate a development process including workflow automation with GitHub Actions, Fastlane, and BitriseBook Description The React Native framework offers a range of powerful features that make it possible to efficiently build high-quality, easy-to-maintain frontend applications across multiple platforms such as iOS, Android, Linux, Mac OS X, Windows, and the web, helping you save both time and money. And this book is your key to unlocking its capabilities. Professional React Native provides the ultimate coverage of essential concepts, best practices, advanced processes, and tips for everyday developer problems. The book makes it easy to understand how React Native works under the hood using step-by-step explanations and practical examples so you can use this knowledge to develop highly performant apps. As you follow along, you'll learn the difference between React and React Native, navigate the React Native ecosystem, and revisit the basics of JavaScript and TypeScript needed to create a React Native application. What's more, you'll work with animations and even control your app with gestures. Finally, you'll be able to structure larger apps and improve developer efficiency through automated processes, testing, and continuous integration. By the end of this React native app development book, you'll have gained the confidence to build high-performance apps for multiple platforms, even on a bigger scale. What you will learnBecome familiar with how React Native works under the hoodUnderstand how to make the most of React Native for app developmentExplore different approaches to building apps across various platformsBecome familiar with process automation and automated testingContribute to open source code and structure your own code libraryUnderstand how to set up the architecture for bigger React Native projectsWho this book is for This book is for developers who want to get started with React Native as well as experienced React Native developers interested in building professional cross-platform applications. Familiarity with the basics of JavaScript (including its syntax) and general software engineering concepts, such as data types, control flows, and server/client structures, is required. Although useful, experience with React Native is not necessary.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9781800561199"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "1800561199"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": true
+          },
+          "pageCount": 269,
+          "printType": "BOOK",
+          "categories": [
+            "Computers"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": true,
+          "contentVersion": "1.4.3.0.preview.3",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=pXuUEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=pXuUEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com.eg/books?id=pXuUEAAAQBAJ&printsec=frontcover&dq=react&hl=&cd=2&source=gbs_api",
+          "infoLink": "https://play.google.com/store/books/details?id=pXuUEAAAQBAJ&source=gbs_api",
+          "canonicalVolumeLink": "https://play.google.com/store/books/details?id=pXuUEAAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "EG",
+          "saleability": "FOR_SALE",
+          "isEbook": true,
+          "listPrice": {
+            "amount": 897.23,
+            "currencyCode": "EGP"
+          },
+          "retailPrice": {
+            "amount": 897.23,
+            "currencyCode": "EGP"
+          },
+          "buyLink": "https://play.google.com/store/books/details?id=pXuUEAAAQBAJ&rdid=book-pXuUEAAAQBAJ&rdot=1&source=gbs_api",
+          "offers": [
+            {
+              "finskyOfferType": 1,
+              "listPrice": {
+                "amountInMicros": 897230000,
+                "currencyCode": "EGP"
+              },
+              "retailPrice": {
+                "amountInMicros": 897230000,
+                "currencyCode": "EGP"
+              }
+            }
+          ]
+        },
+        "accessInfo": {
+          "country": "EG",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": true
+          },
+          "pdf": {
+            "isAvailable": true
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=pXuUEAAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "And this book is your key to unlocking its capabilities. Professional React Native provides the ultimate coverage of essential concepts, best practices, advanced processes, and tips for everyday developer problems."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "GPBbEAAAQBAJ",
+        "etag": "iLPZcYB4Jkg",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/GPBbEAAAQBAJ",
+        "volumeInfo": {
+          "title": "Full-Stack Web Development with GraphQL and React",
+          "subtitle": "Taking React from frontend to full-stack with GraphQL and Apollo",
+          "authors": [
+            "Sebastian Grebe"
+          ],
+          "publisher": "Packt Publishing Ltd",
+          "publishedDate": "2022-02-28",
+          "description": "Unleash the power of GraphQL, React 17, Node, and Express to build a scalable and production-ready application from scratch to be deployed on AWS Key FeaturesBuild full-stack applications with modern APIs using GraphQL and React HooksIntegrate Apollo into React and build frontend components using GraphQLImplement a self-updating notification pop-up with a unique GraphQL feature called SubscriptionsBook Description React and GraphQL, when combined, provide you with a very dynamic, efficient, and stable tech stack to build web-based applications. GraphQL is a modern solution for querying an API that represents an alternative to REST and is the next evolution in web development. This book guides you in creating a full-stack web application from scratch using modern web technologies such as Apollo, Express.js, Node.js, and React. First, you'll start by configuring and setting up your development environment. Next, the book demonstrates how to solve complex problems with GraphQL, such as abstracting multi-table database architectures and handling image uploads using Sequelize. You'll then build a complete Graphbook from scratch. While doing so, you'll cover the tricky parts of connecting React to the backend, and maintaining and synchronizing state. In addition to this, you'll also learn how to write Reusable React components and use React Hooks. Later chapters will guide you through querying data and authenticating users in order to enable user privacy. Finally, you'll explore how to deploy your application on AWS and ensure continuous deployment using Docker and CircleCI. By the end of this web development book, you'll have learned how to build and deploy scalable full-stack applications with ease using React and GraphQL. What you will learnBuild a GraphQL API by implementing models and schemas with Apollo and SequelizeSet up an Apollo Client and build frontend components using ReactWrite Reusable React components and use React HooksAuthenticate and query user data using GraphQLUse Mocha to write test cases for your full-stack applicationDeploy your application to AWS using Docker and CircleCIWho this book is for This React GraphQL book is for web developers familiar with React and GraphQL who want to enhance their skills and build full-stack applications using industry standards like React, Apollo, Node.js, and SQL at scale while learning to solve complex problems with GraphQL.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9781801079174"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "180107917X"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": true
+          },
+          "pageCount": 473,
+          "printType": "BOOK",
+          "categories": [
+            "Computers"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "1.1.1.0.preview.3",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=GPBbEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=GPBbEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com.eg/books?id=GPBbEAAAQBAJ&printsec=frontcover&dq=react&hl=&cd=3&source=gbs_api",
+          "infoLink": "https://play.google.com/store/books/details?id=GPBbEAAAQBAJ&source=gbs_api",
+          "canonicalVolumeLink": "https://play.google.com/store/books/details?id=GPBbEAAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "EG",
+          "saleability": "FOR_SALE",
+          "isEbook": true,
+          "listPrice": {
+            "amount": 1117.83,
+            "currencyCode": "EGP"
+          },
+          "retailPrice": {
+            "amount": 1117.83,
+            "currencyCode": "EGP"
+          },
+          "buyLink": "https://play.google.com/store/books/details?id=GPBbEAAAQBAJ&rdid=book-GPBbEAAAQBAJ&rdot=1&source=gbs_api",
+          "offers": [
+            {
+              "finskyOfferType": 1,
+              "listPrice": {
+                "amountInMicros": 1117830000,
+                "currencyCode": "EGP"
+              },
+              "retailPrice": {
+                "amountInMicros": 1117830000,
+                "currencyCode": "EGP"
+              }
+            }
+          ]
+        },
+        "accessInfo": {
+          "country": "EG",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": true
+          },
+          "pdf": {
+            "isAvailable": true
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=GPBbEAAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "This book guides you in creating a full-stack web application from scratch using modern web technologies such as Apollo, Express.js, Node.js, and React. First, you&#39;ll start by configuring and setting up your development environment."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "XCLhDwAAQBAJ",
+        "etag": "yWvOCMSySRM",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/XCLhDwAAQBAJ",
+        "volumeInfo": {
+          "title": "React and React Native",
+          "subtitle": "A complete hands-on guide to modern web and mobile development with React.js",
+          "authors": [
+            "Adam Boduch",
+            "Roy Derks"
+          ],
+          "publisher": "Packt Publishing Ltd",
+          "publishedDate": "2020-04-30",
+          "description": "Get up to speed with React, React Native, GraphQL and Apollo for building cross-platform native apps with the help of practical examples Key FeaturesCovers the latest features of React such as Hooks, Suspense, NativeBase, and Apollo in this updated third editionGet to grips with the React architecture for writing easy-to-manage web and mobile applicationsUnderstand GraphQL and Apollo for building a scalable backend for your cross-platform appsBook Description React and React Native, Facebook's innovative User Interface (UI) libraries, are designed to help you build robust cross-platform web and mobile applications. This updated third edition is improved and updated to cover the latest version of React. The book particularly focuses on the latest developments in the React ecosystem, such as modern Hook implementations, code splitting using lazy components and Suspense, user interface framework components using Material-UI, and Apollo. In terms of React Native, the book has been updated to version 0.62 and demonstrates how to apply native UI components for your existing mobile apps using NativeBase. You will begin by learning about the essential building blocks of React components. Next, you'll progress to working with higher-level functionalities in application development, before putting this knowledge to use by developing user interface components for the web and for native platforms. In the concluding chapters, you'll learn how to bring your application together with a robust data architecture. By the end of this book, you'll be able to build React applications for the web and React Native applications for multiple mobile platforms. What you will learnDelve into the React architecture, component properties, state, and contextGet to grips with React Hooks for handling functions and componentsImplement code splitting in React using lazy components and SuspenseBuild robust user interfaces for mobile and desktop apps using Material-UIWrite shared components for Android and iOS mobile apps using React NativeSimplify layout design for React Native apps using NativeBaseWrite GraphQL schemas to power web and mobile appsImplement web and mobile components that are driven by ApolloWho this book is for This book is for any JavaScript developer who wants to start learning how to use Facebook's UI libraries, React and React Native, for mobile and web application development. Although no prior knowledge of React is needed, working knowledge of JavaScript programming will help you understand the concepts covered in the book more effectively.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9781839212437"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "1839212438"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": true
+          },
+          "pageCount": 505,
+          "printType": "BOOK",
+          "categories": [
+            "Computers"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": true,
+          "contentVersion": "1.3.3.0.preview.3",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=XCLhDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=XCLhDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com.eg/books?id=XCLhDwAAQBAJ&printsec=frontcover&dq=react&hl=&cd=4&source=gbs_api",
+          "infoLink": "https://play.google.com/store/books/details?id=XCLhDwAAQBAJ&source=gbs_api",
+          "canonicalVolumeLink": "https://play.google.com/store/books/details?id=XCLhDwAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "EG",
+          "saleability": "FOR_SALE",
+          "isEbook": true,
+          "listPrice": {
+            "amount": 1927.53,
+            "currencyCode": "EGP"
+          },
+          "retailPrice": {
+            "amount": 1927.53,
+            "currencyCode": "EGP"
+          },
+          "buyLink": "https://play.google.com/store/books/details?id=XCLhDwAAQBAJ&rdid=book-XCLhDwAAQBAJ&rdot=1&source=gbs_api",
+          "offers": [
+            {
+              "finskyOfferType": 1,
+              "listPrice": {
+                "amountInMicros": 1927530000,
+                "currencyCode": "EGP"
+              },
+              "retailPrice": {
+                "amountInMicros": 1927530000,
+                "currencyCode": "EGP"
+              }
+            }
+          ]
+        },
+        "accessInfo": {
+          "country": "EG",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": true
+          },
+          "pdf": {
+            "isAvailable": true
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=XCLhDwAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "By the end of this book, you&#39;ll be able to build React applications for the web and React Native applications for multiple mobile platforms."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "2HvGDwAAQBAJ",
+        "etag": "LhI4js+6upw",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/2HvGDwAAQBAJ",
+        "volumeInfo": {
+          "title": "React Projects",
+          "subtitle": "Build 12 real-world applications from scratch using React, React Native, and React 360",
+          "authors": [
+            "Roy Derks"
+          ],
+          "publisher": "Packt Publishing Ltd",
+          "publishedDate": "2019-12-20",
+          "description": "Build cross-platform applications of varying complexity for the web, mobile, and VR devices using React tooling Key FeaturesBuild React applications at scale using effective React patterns and best practicesExplore React features such as Hooks, the Context API, and the Suspense APIExtend React’s integration with React Native for building cross-platform mobile apps and gamesBook Description Developed by Facebook, React is a popular library for building impressive user interfaces. React extends its capabilities to the mobile platform using the React Native framework and integrates with popular web and mobile tools to build scalable applications. React Projects is your guide to learning React development by using modern development patterns and integrating React with powerful web tools such as GraphQL, Expo, and React 360. You'll start building a real-world project right from the first chapter and get hands on with developing scalable applications as you advance to building more complex projects. Throughout the book, you'll use the latest versions of React and React Native to explore features such as Higher Order Components (HOC), Context, and Hooks on multiple platforms, which will help you build full stack web and mobile applications efficiently. Finally, you'll delve into unit testing with Jest to build test-driven apps. By the end of this React book, you'll have developed the skills necessary to start building scalable React apps across web and mobile platforms. What you will learnCreate a wide range of applications using various modern React tools and frameworksDiscover how React Hooks modernize state management for React appsDevelop progressive web applications using React componentsBuild test-driven React applications using the Jest and Enzyme frameworksUnderstand full stack development using React, Apollo, and GraphQLPerform server-side rendering using React and React RouterDesign gestures and animations for a cross-platform game using React NativeWho this book is for The book is for JavaScript developers who want to explore React tooling and frameworks for building cross-platform applications. Basic knowledge of web development, ECMAScript, and React will assist with understanding key concepts covered in this book.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9781789953398"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "1789953391"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": true
+          },
+          "pageCount": 465,
+          "printType": "BOOK",
+          "categories": [
+            "Computers"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": true,
+          "contentVersion": "0.3.3.0.preview.3",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=2HvGDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=2HvGDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com.eg/books?id=2HvGDwAAQBAJ&printsec=frontcover&dq=react&hl=&cd=5&source=gbs_api",
+          "infoLink": "https://play.google.com/store/books/details?id=2HvGDwAAQBAJ&source=gbs_api",
+          "canonicalVolumeLink": "https://play.google.com/store/books/details?id=2HvGDwAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "EG",
+          "saleability": "FOR_SALE",
+          "isEbook": true,
+          "listPrice": {
+            "amount": 950.69,
+            "currencyCode": "EGP"
+          },
+          "retailPrice": {
+            "amount": 950.69,
+            "currencyCode": "EGP"
+          },
+          "buyLink": "https://play.google.com/store/books/details?id=2HvGDwAAQBAJ&rdid=book-2HvGDwAAQBAJ&rdot=1&source=gbs_api",
+          "offers": [
+            {
+              "finskyOfferType": 1,
+              "listPrice": {
+                "amountInMicros": 950690000,
+                "currencyCode": "EGP"
+              },
+              "retailPrice": {
+                "amountInMicros": 950690000,
+                "currencyCode": "EGP"
+              }
+            }
+          ]
+        },
+        "accessInfo": {
+          "country": "EG",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": true
+          },
+          "pdf": {
+            "isAvailable": true
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=2HvGDwAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Basic knowledge of web development, ECMAScript, and React will assist with understanding key concepts covered in this book."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "jLkrDwAAQBAJ",
+        "etag": "6OzjH5KLjH8",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/jLkrDwAAQBAJ",
+        "volumeInfo": {
+          "title": "React and React Native",
+          "authors": [
+            "Adam Boduch"
+          ],
+          "publisher": "Packt Publishing Ltd",
+          "publishedDate": "2017-03-08",
+          "description": "Use React and React Native to build applications for desktop browsers, mobile browsers, and even as native mobile apps About This Book Build React and React Native applications using familiar component concepts Dive deep into each platform, from routing in React to creating native mobile applications that can run offline Use Facebook's Relay, React and GraphQL technologies, to create a unified architecture that powers both web and native applications Who This Book Is For This book is written for any JavaScript developer—beginner or expert—who wants to start learning how to put both of Facebook's UI libraries to work. No knowledge of React is needed, though a working knowledge of ES2015 will help you follow along better. What You Will Learn Craft reusable React components Control navigation using the React Router to help keep your UI in sync with URLs Build isomorphic web applications using Node.js Use the Flexbox layout model to create responsive mobile designs Leverage the native APIs of Android and iOS to build engaging applications with React Native Respond to gestures in a way that's intuitive for the user Use Relay to build a unified data architecture for your React UIs In Detail React and React Native allow you to build cross-platform desktop and mobile applications using Facebook's innovative UI libraries. Combined with the Flux data architecture and Relay, you can now create powerful and feature-complete applications from just one code base! This book is split into three parts. The first part shows you how to start crafting composable UIs using React, from rendering with JSX and creating reusable components through to routing and creating isomorphic applications that run on Node. We then move on to showing you how to take the concepts of React and apply them to building Native UIs using React Native. You'll find out how to build responsive and streamlined UIs that can properly handle user interactions in a mobile environment. You'll also learn how to access device-specific APIs such as the geolocation API, and how to handle offline development with React Native. Finally, we'll tie all of these skills together and shows you how you can create React applications that run on every major platform. As well as understanding application state in depth, you'll learn how to leverage Relay to make feature-complete, data-driven web and native mobile applications. Style and approach Split into three major sections to help organize your learning, this hands-on, code-first book will help you get up to speed with React and React Native—the UI framework that powers Netflix, Yahoo, and Facebook.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9781786469571"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "178646957X"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": true
+          },
+          "pageCount": 485,
+          "printType": "BOOK",
+          "categories": [
+            "Computers"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": true,
+          "contentVersion": "1.1.2.0.preview.3",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=jLkrDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=jLkrDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com.eg/books?id=jLkrDwAAQBAJ&printsec=frontcover&dq=react&hl=&cd=6&source=gbs_api",
+          "infoLink": "https://play.google.com/store/books/details?id=jLkrDwAAQBAJ&source=gbs_api",
+          "canonicalVolumeLink": "https://play.google.com/store/books/details?id=jLkrDwAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "EG",
+          "saleability": "FOR_SALE",
+          "isEbook": true,
+          "listPrice": {
+            "amount": 1272.06,
+            "currencyCode": "EGP"
+          },
+          "retailPrice": {
+            "amount": 1272.06,
+            "currencyCode": "EGP"
+          },
+          "buyLink": "https://play.google.com/store/books/details?id=jLkrDwAAQBAJ&rdid=book-jLkrDwAAQBAJ&rdot=1&source=gbs_api",
+          "offers": [
+            {
+              "finskyOfferType": 1,
+              "listPrice": {
+                "amountInMicros": 1272060000,
+                "currencyCode": "EGP"
+              },
+              "retailPrice": {
+                "amountInMicros": 1272060000,
+                "currencyCode": "EGP"
+              }
+            }
+          ]
+        },
+        "accessInfo": {
+          "country": "EG",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": true
+          },
+          "pdf": {
+            "isAvailable": true
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=jLkrDwAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Use React and React Native to build applications for desktop browsers, mobile browsers, and even as native mobile apps About This Book Build React and React Native applications using familiar component concepts Dive deep into each platform, ..."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "jUvZDQAAQBAJ",
+        "etag": "4kpvZdt2LLw",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/jUvZDQAAQBAJ",
+        "volumeInfo": {
+          "title": "React: Building Modern Web Applications",
+          "authors": [
+            "Jonathan Hayward",
+            "Artemij Fedosejev",
+            "Narayan Prusty",
+            "Adam Horton",
+            "Ryan Vice",
+            "Ethan Holmes",
+            "Tom Bray"
+          ],
+          "publisher": "Packt Publishing Ltd",
+          "publishedDate": "2016-06-10",
+          "description": "Master the art of building dynamic, modern web applications with React About This Book Learn the hot new frontend web framework from Facebook – ReactJS, an easy way of developing the V in MVC and a better approach to software engineering in JavaScript A fast-paced guide to designing and building scalable and maintainable web apps with React.js Learn all the new ES6 features and be among the most prominent JavaScript developers who can write efficient JS programs as per the latest standards Master the art of building modern web applications using React Learn to build modern native iOS and Android applications using JavaScript and the incredible power of React Who This Book Is For This course is for web developers that want to unlock high performance dynamism in the applications that they create. If you want a comprehensive journey into one of the most important JavaScript frameworks around today, dive into this course. What You Will Learn Take control of the front end with reactive JavaScript programming Discover what ReactJS offers your development - before mastering it Create React elements with properties and children Use JSX to speed up your React development process Test your React components with the Jest test framework Learn the latest syntax of ES6 Execute ES6 in a non-supported ES6 environment Learn the principles of object-oriented programming Create a complete single-page application Use an application design plan to write smarter, more meaningful code Learn how to use animations to give extra style to your application Get to grips with the React Native environment Write your own custom native UI components Integrate native modules in Objective-C and Java that interact with JavaScript In Detail ReactJS has helped to transform the web as we know it. Designed by Facebook to help developers build rapid, responsive UI that can deal with data-intensive usage, it's an essential component in any web developer's skillset. This ReactJS course, in five connected modules, provides you with a fast, engaging and practical route into ReactJS—so you can build powerful, elegant, and modern web applications. Beginning with the Reactive Programming with JavaScript module, you will learn how to take advantage of a reactive and functional programming paradigm to rethink how you approach your JavaScript code. It's built to help you understand the concepts, relevant and applicable for any frontend developer. You'll then dive a little deeper into ReactJS. The second module gives you a rapid look through the fundamentals of ReactJS, showing you how to build a basic application and demonstrating how to implement the Flux architecture. In the third module you will get to grips with ES6—this will make you a more fluent JavaScript developer, giving you control over ReactJS. You can put your old JavaScript hacks aside and instead explore how to create ES6 custom iterators. In the final two modules you'll learn how to fully master ReactJS, exploring its wider ecosystem of tools that have helped to make it one of the most important tools in web development today. Ending with insights and guidance on React Native, the tool built for today's demand for native, intuitive user experiences and interfaces, with this course you can be confident in building dynamic and modern apps with React. Style and approach Consisting of five separate modules, journey from the fundamentals of reactive programming to the exciting possibilities of React Native. Each module builds on each other, helping you to incrementally develop your skills and knowledge.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9781786462848"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "1786462842"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": true
+          },
+          "pageCount": 910,
+          "printType": "BOOK",
+          "categories": [
+            "Computers"
+          ],
+          "averageRating": 3,
+          "ratingsCount": 1,
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": true,
+          "contentVersion": "1.1.3.0.preview.3",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=jUvZDQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=jUvZDQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com.eg/books?id=jUvZDQAAQBAJ&printsec=frontcover&dq=react&hl=&cd=7&source=gbs_api",
+          "infoLink": "https://play.google.com/store/books/details?id=jUvZDQAAQBAJ&source=gbs_api",
+          "canonicalVolumeLink": "https://play.google.com/store/books/details?id=jUvZDQAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "EG",
+          "saleability": "FOR_SALE",
+          "isEbook": true,
+          "listPrice": {
+            "amount": 2218.69,
+            "currencyCode": "EGP"
+          },
+          "retailPrice": {
+            "amount": 2218.69,
+            "currencyCode": "EGP"
+          },
+          "buyLink": "https://play.google.com/store/books/details?id=jUvZDQAAQBAJ&rdid=book-jUvZDQAAQBAJ&rdot=1&source=gbs_api",
+          "offers": [
+            {
+              "finskyOfferType": 1,
+              "listPrice": {
+                "amountInMicros": 2218690000,
+                "currencyCode": "EGP"
+              },
+              "retailPrice": {
+                "amountInMicros": 2218690000,
+                "currencyCode": "EGP"
+              }
+            }
+          ]
+        },
+        "accessInfo": {
+          "country": "EG",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": true
+          },
+          "pdf": {
+            "isAvailable": true
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=jUvZDQAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Master the art of building dynamic, modern web applications with React About This Book Learn the hot new frontend web framework from Facebook – ReactJS, an easy way of developing the V in MVC and a better approach to software engineering ..."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "CSj5DwAAQBAJ",
+        "etag": "H7GfG8vwJMA",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/CSj5DwAAQBAJ",
+        "volumeInfo": {
+          "title": "The The React Workshop",
+          "subtitle": "Get started with building web applications using practical tips and examples from React use cases",
+          "authors": [
+            "Brandon Richey",
+            "Ryan Yu",
+            "Endre Vegh",
+            "Theofanis Despoudis",
+            "Anton Punith",
+            "Florian Sloot"
+          ],
+          "publisher": "Packt Publishing Ltd",
+          "publishedDate": "2020-08-21",
+          "description": "Work through engaging exercises and activities and gain practical skills to make your web applications function effortlessly with the help of React Key FeaturesExplore the React environment by creating live projectsSolve real-world problems relating to building modern web applicationsGain a thorough understanding of how data moves through different React componentsBook Description Are you interested in how React takes command of the view layer for web and mobile apps and changes the data of large web applications without needing to reload the page? This workshop will help you learn how and show you how to develop and enhance web apps using the features of the React framework with interesting examples and exercises. The workshop starts by demonstrating how to create your first React project. You’ll tap into React’s popular feature JSX to develop templates and use DOM events to make your project interactive. Next, you’ll focus on the lifecycle of the React component and understand how components are created, mounted, unmounted, and destroyed. Later, you’ll create and customize components to understand the data flow in React and how props and state communicate between components. You’ll also use Formik to create forms in React to explore the concept of controlled and uncontrolled components and even play with React Router to navigate between React components. The chapters that follow will help you build an interesting image-search app to fetch data from the outside world and populate the data to the React app. Finally, you’ll understand what ref API is and how it is used to manipulate DOM in an imperative way. By the end of this React book, you’ll have the skills you need to set up and create web apps using React. What you will learnUse JSX to include logic in the view layer of applicationsGet familiar with the important methods and events in the React lifecycleDistinguish between class and functional component syntaxesCreate forms with Formik and handle errorsUnderstand the React Hooks API and the problems it can solveFetch outside data using the Axios library and populate the data to the appWho this book is for The React Workshop is for web developers and programmers who are looking to learn React and use it for creating and enhancing web applications. Although the workshop is for beginners, prior knowledge of JavaScript programming and HTML and CSS is necessary to easily understand the concepts that are covered.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9781838821661"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "183882166X"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": true
+          },
+          "pageCount": 805,
+          "printType": "BOOK",
+          "categories": [
+            "Computers"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "0.3.5.0.preview.3",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=CSj5DwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=CSj5DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com.eg/books?id=CSj5DwAAQBAJ&printsec=frontcover&dq=react&hl=&cd=8&source=gbs_api",
+          "infoLink": "https://play.google.com/store/books/details?id=CSj5DwAAQBAJ&source=gbs_api",
+          "canonicalVolumeLink": "https://play.google.com/store/books/details?id=CSj5DwAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "EG",
+          "saleability": "FOR_SALE",
+          "isEbook": true,
+          "listPrice": {
+            "amount": 1267.69,
+            "currencyCode": "EGP"
+          },
+          "retailPrice": {
+            "amount": 1267.69,
+            "currencyCode": "EGP"
+          },
+          "buyLink": "https://play.google.com/store/books/details?id=CSj5DwAAQBAJ&rdid=book-CSj5DwAAQBAJ&rdot=1&source=gbs_api",
+          "offers": [
+            {
+              "finskyOfferType": 1,
+              "listPrice": {
+                "amountInMicros": 1267690000,
+                "currencyCode": "EGP"
+              },
+              "retailPrice": {
+                "amountInMicros": 1267690000,
+                "currencyCode": "EGP"
+              }
+            }
+          ]
+        },
+        "accessInfo": {
+          "country": "EG",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": true
+          },
+          "pdf": {
+            "isAvailable": true
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=CSj5DwAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "What you will learnUse JSX to include logic in the view layer of applicationsGet familiar with the important methods and events in the React lifecycleDistinguish between class and functional component syntaxesCreate forms with Formik and ..."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "MZRRDwAAQBAJ",
+        "etag": "E+Ir0k18w4s",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/MZRRDwAAQBAJ",
+        "volumeInfo": {
+          "title": "React: Cross-Platform Application Development with React Native",
+          "subtitle": "Build 4 real-world apps with React Native",
+          "authors": [
+            "Emilio Rodriguez Martinez"
+          ],
+          "publisher": "Packt Publishing Ltd",
+          "publishedDate": "2018-03-13",
+          "description": "With React Native, you can build native mobile apps that are much more powerful, interactive, and faster by using JavaScript. React Native helps web and mobile developers to build cross-platform apps at a high level. This book takes you through four projects to help understand of the framework and build mobile apps with native user experience.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9781789139600"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "1789139600"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": true
+          },
+          "pageCount": 183,
+          "printType": "BOOK",
+          "categories": [
+            "Computers"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "1.1.2.0.preview.3",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=MZRRDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=MZRRDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com.eg/books?id=MZRRDwAAQBAJ&printsec=frontcover&dq=react&hl=&cd=9&source=gbs_api",
+          "infoLink": "https://play.google.com/store/books/details?id=MZRRDwAAQBAJ&source=gbs_api",
+          "canonicalVolumeLink": "https://play.google.com/store/books/details?id=MZRRDwAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "EG",
+          "saleability": "FOR_SALE",
+          "isEbook": true,
+          "listPrice": {
+            "amount": 1126.8,
+            "currencyCode": "EGP"
+          },
+          "retailPrice": {
+            "amount": 1126.8,
+            "currencyCode": "EGP"
+          },
+          "buyLink": "https://play.google.com/store/books/details?id=MZRRDwAAQBAJ&rdid=book-MZRRDwAAQBAJ&rdot=1&source=gbs_api",
+          "offers": [
+            {
+              "finskyOfferType": 1,
+              "listPrice": {
+                "amountInMicros": 1126800000,
+                "currencyCode": "EGP"
+              },
+              "retailPrice": {
+                "amountInMicros": 1126800000,
+                "currencyCode": "EGP"
+              }
+            }
+          ]
+        },
+        "accessInfo": {
+          "country": "EG",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": true
+          },
+          "pdf": {
+            "isAvailable": true
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=MZRRDwAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "React Native helps web and mobile developers to build cross-platform apps at a high level. This book takes you through four projects to help understand of the framework and build mobile apps with native user experience."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "7KVYDwAAQBAJ",
+        "etag": "XdF39UWwV9o",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/7KVYDwAAQBAJ",
+        "volumeInfo": {
+          "title": "Learning React",
+          "subtitle": "A Hands-On Guide to Building Web Applications Using React and Redux",
+          "authors": [
+            "Kirupa Chinnathambi"
+          ],
+          "publisher": "Addison-Wesley Professional",
+          "publishedDate": "2018-04-26",
+          "description": "Learning React A hands-on guide to building web applications using React and Redux As far as new web frameworks and libraries go, React is quite the runaway success. It not only deals with the most common problems developers face when building complex apps, it throws in a few additional tricks that make building the visuals for such apps much, much easier. What React isn’t, though, is beginner-friendly and approachable. Until now. In Learning React, author Kirupa Chinnathambi brings his fresh, clear, and very personable writing style to help web developers new to React understand its fundamentals and how to use it to build really performant (and awesome) apps. The only book on the market that helps you get your first React app up and running in just minutes, Learning Reactis chock-full of colorful illustrations to help you visualize difficult concepts and practical step-by-step examples to show you how to apply what you learn. Build your first React app Create components to define parts of your UI Combine components into other components to build more complex UIs Use JSX to specify visuals without writing full-fledged JavaScript Deal with maintaining state Work with React’s way of styling content Make sense of the mysterious component lifecycle Build multi-page apps using routing and views Optimize your React workflow using tools such as Node, Babel, webpack, and others Use Redux to make managing your app data and state easy Contents at a Glance 1 Introducing React 2 Building Your First React App 3 Components in React 4 Styling in React 5 Creating Complex Components 6 Transferring Properties 7 Meet JSX... Again! 8 Dealing with State in React 9 Going from Data to UI in React 10 Events in React 11 The Component Lifecycle 12 Accessing DOM Elements in React 13 Setting Up Your React Dev Environment 14 Working with External Data in React 15 Building an Awesome Todo List App in React 16 Creating a Sliding Menu in React 17 Avoiding Unnecessary Renders in React 18 Creating a Single-Page App in React Using React Router 19 Introduction to Redux 20 Using Redux with React",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9780134843575"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "0134843576"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": true
+          },
+          "pageCount": 747,
+          "printType": "BOOK",
+          "categories": [
+            "Computers"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": true,
+          "contentVersion": "1.7.7.0.preview.3",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=7KVYDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=7KVYDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com.eg/books?id=7KVYDwAAQBAJ&printsec=frontcover&dq=react&hl=&cd=10&source=gbs_api",
+          "infoLink": "https://play.google.com/store/books/details?id=7KVYDwAAQBAJ&source=gbs_api",
+          "canonicalVolumeLink": "https://play.google.com/store/books/details?id=7KVYDwAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "EG",
+          "saleability": "FOR_SALE",
+          "isEbook": true,
+          "listPrice": {
+            "amount": 896.31,
+            "currencyCode": "EGP"
+          },
+          "retailPrice": {
+            "amount": 896.31,
+            "currencyCode": "EGP"
+          },
+          "buyLink": "https://play.google.com/store/books/details?id=7KVYDwAAQBAJ&rdid=book-7KVYDwAAQBAJ&rdot=1&source=gbs_api",
+          "offers": [
+            {
+              "finskyOfferType": 1,
+              "listPrice": {
+                "amountInMicros": 896310000,
+                "currencyCode": "EGP"
+              },
+              "retailPrice": {
+                "amountInMicros": 896310000,
+                "currencyCode": "EGP"
+              }
+            }
+          ]
+        },
+        "accessInfo": {
+          "country": "EG",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+          "epub": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com.eg/books/download/Learning_React-sample-epub.acsm?id=7KVYDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "pdf": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com.eg/books/download/Learning_React-sample-pdf.acsm?id=7KVYDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=7KVYDwAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "The only book on the market that helps you get your first React app up and running in just minutes, Learning Reactis chock-full of colorful illustrations to help you visualize difficult concepts and practical step-by-step examples to show ..."
+        }
+      },
+      {
+      "kind": "books#volume",
+      "id": "BCvXDwAAQBAJ",
+      "etag": "ExU2uqXftso",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/BCvXDwAAQBAJ",
+      "volumeInfo": {
+        "title": "المجموعة الكاملة لهاري بوتر",
+        "subtitle": "Harry Potter: The Complete Collection (1-7)",
+        "authors": [
+          "ج. ك. رولينج"
+        ],
+        "publisher": "Pottermore Publishing",
+        "publishedDate": "2020-03-17",
+        "description": "عندما تُرك هاري بوتر على عتبة بابه عندما كان طفلاً، لم يكن لديه أي فكرة عن أنه الفتى الذي نجا، أو أنه مشهور في جميع أنحاء العالم السحري. بعد سنوات، كان مندهشًا لتلقّي خطاب قبوله في مدرسة هوغوارتس للسحر والشعوذة وسرعان ما انطلق في مغامرة سحرية لا مثيل لها. انضم إلى هاري وصديقَيه المخلصَين بشدة، هرميون ورون، في هذه القصة عن قوة الحقيقة والحب والأمل. بعد أن أصبحت كلاسيكيات عصرنا، لا تفشل كتب هاري بوتر الإلكترونية في توفير الراحة والهروب من الواقع. من خلال رسالة الأمل والانتماء والقوة الدائمة للحقيقة والحب، تستمر قصة الصبي الذي نجا في إسعاد أجيال من القراءا الجدد.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781781109892"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1781109893"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": false
+        },
+        "pageCount": 2575,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.2.2.0.preview.2",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=BCvXDwAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=BCvXDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "ar",
+        "previewLink": "http://books.google.com.eg/books?id=BCvXDwAAQBAJ&dq=harryPotter&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com.eg/books?id=BCvXDwAAQBAJ&dq=harryPotter&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/%D8%A7%D9%84%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A9_%D8%A7%D9%84%D9%83%D8%A7%D9%85%D9%84%D8%A9_%D9%84%D9%87%D8%A7%D8%B1.html?hl=&id=BCvXDwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "EG",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "EG",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true
+        },
+        "pdf": {
+          "isAvailable": true
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=BCvXDwAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "عندما تُرك هاري بوتر على عتبة بابه عندما كان طفلاً، لم يكن لديه أي فكرة عن أنه الفتى الذي نجا، أو أنه مشهور في جميع أنحاء العالم ..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "wrOQLV6xB-wC",
+      "etag": "xsK/DhYT0wE",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/wrOQLV6xB-wC",
+      "volumeInfo": {
+        "title": "Harry Potter and the Sorcerer's Stone",
+        "authors": [
+          "J.K. Rowling"
+        ],
+        "publisher": "Pottermore Publishing",
+        "publishedDate": "2015-12-08",
+        "description": "Turning the envelope over, his hand trembling, Harry saw a purple wax seal bearing a coat of arms; a lion, an eagle, a badger and a snake surrounding a large letter 'H'. Harry Potter has never even heard of Hogwarts when the letters start dropping on the doormat at number four, Privet Drive. Addressed in green ink on yellowish parchment with a purple seal, they are swiftly confiscated by his grisly aunt and uncle. Then, on Harry's eleventh birthday, a great beetle-eyed giant of a man called Rubeus Hagrid bursts in with some astonishing news: Harry Potter is a wizard, and he has a place at Hogwarts School of Witchcraft and Wizardry. An incredible adventure is about to begin! Having become classics of our time, the Harry Potter eBooks never fail to bring comfort and escapism. With their message of hope, belonging and the enduring power of truth and love, the story of the Boy Who Lived continues to delight generations of new readers.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781781100486"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1781100489"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": false
+        },
+        "pageCount": 311,
+        "printType": "BOOK",
+        "categories": [
+          "Juvenile Fiction"
+        ],
+        "averageRating": 4.5,
+        "ratingsCount": 317,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "3.37.35.0.preview.2",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=wrOQLV6xB-wC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=wrOQLV6xB-wC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com.eg/books?id=wrOQLV6xB-wC&dq=harryPotter&hl=&cd=2&source=gbs_api",
+        "infoLink": "http://books.google.com.eg/books?id=wrOQLV6xB-wC&dq=harryPotter&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Harry_Potter_and_the_Sorcerer_s_Stone.html?hl=&id=wrOQLV6xB-wC"
+      },
+      "saleInfo": {
+        "country": "EG",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "EG",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true
+        },
+        "pdf": {
+          "isAvailable": true
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=wrOQLV6xB-wC&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "With their message of hope, belonging and the enduring power of truth and love, the story of the Boy Who Lived continues to delight generations of new readers."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "gal9MtXKC68C",
+      "etag": "Z4303eDVNG0",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/gal9MtXKC68C",
+      "volumeInfo": {
+        "title": "\u200fهيرى پوٹر اور رازوں کا کمره :\u200f",
+        "subtitle": "\u200fجے. کے. رولنگ، کى شهرۀ آفاق کهانى کا اردو ترجمه /\u200f",
+        "authors": [
+          "J. K. Rowling",
+          "Darakhshanda Asghar Khokhar"
+        ],
+        "publisher": "Oxford University Press, USA",
+        "publishedDate": "2004",
+        "description": "An Urdu language edition of the second Harry Potter tale.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "0195798767"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780195798760"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 314,
+        "printType": "BOOK",
+        "categories": [
+          "Juvenile Fiction"
+        ],
+        "averageRating": 4,
+        "ratingsCount": 46,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.5.5.0.preview.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=gal9MtXKC68C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=gal9MtXKC68C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "ur",
+        "previewLink": "http://books.google.com.eg/books?id=gal9MtXKC68C&printsec=frontcover&dq=harryPotter&hl=&cd=3&source=gbs_api",
+        "infoLink": "http://books.google.com.eg/books?id=gal9MtXKC68C&dq=harryPotter&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/%D9%87%D9%8A%D8%B1%D9%89_%D9%BE%D9%88%D9%B9%D8%B1_%D8%A7%D9%88%D8%B1_%D8%B1%D8%A7%D8%B2%D9%88%DA%BA_%DA%A9%D8%A7.html?hl=&id=gal9MtXKC68C"
+      },
+      "saleInfo": {
+        "country": "EG",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "EG",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.eg/books/download/%D9%87%D9%8A%D8%B1%D9%89_%D9%BE%D9%88%D9%B9%D8%B1_%D8%A7%D9%88%D8%B1_%D8%B1%D8%A7%D8%B2%D9%88%DA%BA_%DA%A9%D8%A7-sample-pdf.acsm?id=gal9MtXKC68C&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=gal9MtXKC68C&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "An Urdu language edition of the second Harry Potter tale."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "DQQhCwAAQBAJ",
+      "etag": "P8YpCAsOuJY",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/DQQhCwAAQBAJ",
+      "volumeInfo": {
+        "title": "Harry Potter and the Chamber of Secrets",
+        "authors": [
+          "J.K. Rowling"
+        ],
+        "publisher": "Pottermore Publishing",
+        "publishedDate": "2015-12-08",
+        "description": "'There is a plot, Harry Potter. A plot to make most terrible things happen at Hogwarts School of Witchcraft and Wizardry this year.' Harry Potter's summer has included the worst birthday ever, doomy warnings from a house-elf called Dobby, and rescue from the Dursleys by his friend Ron Weasley in a magical flying car! Back at Hogwarts School of Witchcraft and Wizardry for his second year, Harry hears strange whispers echo through empty corridors - and then the attacks start. Students are found as though turned to stone... Dobby's sinister predictions seem to be coming true. Having become classics of our time, the Harry Potter eBooks never fail to bring comfort and escapism. With their message of hope, belonging and the enduring power of truth and love, the story of the Boy Who Lived continues to delight generations of new readers.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781781100509"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1781100500"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": false
+        },
+        "pageCount": 325,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.3.4.0.preview.2",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=DQQhCwAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=DQQhCwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com.eg/books?id=DQQhCwAAQBAJ&dq=harryPotter&hl=&cd=4&source=gbs_api",
+        "infoLink": "http://books.google.com.eg/books?id=DQQhCwAAQBAJ&dq=harryPotter&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Harry_Potter_and_the_Chamber_of_Secrets.html?hl=&id=DQQhCwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "EG",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "EG",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true
+        },
+        "pdf": {
+          "isAvailable": true
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=DQQhCwAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "With their message of hope, belonging and the enduring power of truth and love, the story of the Boy Who Lived continues to delight generations of new readers."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "GZAoAQAAIAAJ",
+      "etag": "0lRzaQDqjCw",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/GZAoAQAAIAAJ",
+      "volumeInfo": {
+        "title": "Harry Potter and the Deathly Hallows",
+        "authors": [
+          "J. K. Rowling"
+        ],
+        "publishedDate": "2007",
+        "description": "\"The final adventure in J.K. Rowling's phenomenal, best-selling Harry Potter book series\"--Provided by publisher.",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "UCSC:32106019703807"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 792,
+        "printType": "BOOK",
+        "categories": [
+          "Bildungsromans"
+        ],
+        "averageRating": 4.5,
+        "ratingsCount": 92,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "6.5.2.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=GZAoAQAAIAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=GZAoAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com.eg/books?id=GZAoAQAAIAAJ&q=harryPotter&dq=harryPotter&hl=&cd=5&source=gbs_api",
+        "infoLink": "http://books.google.com.eg/books?id=GZAoAQAAIAAJ&dq=harryPotter&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Harry_Potter_and_the_Deathly_Hallows.html?hl=&id=GZAoAQAAIAAJ"
+      },
+      "saleInfo": {
+        "country": "EG",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "EG",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=GZAoAQAAIAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "&quot;The final adventure in J.K. Rowling&#39;s phenomenal, best-selling Harry Potter book series&quot;--Provided by publisher."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "DKcWE3WXoj8C",
+      "etag": "+CdDPk6oRSw",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/DKcWE3WXoj8C",
+      "volumeInfo": {
+        "title": "Harry Potter and International Relations",
+        "authors": [
+          "Daniel H. Nexon",
+          "Iver B. Neumann"
+        ],
+        "publisher": "Rowman & Littlefield",
+        "publishedDate": "2006",
+        "description": "Drawing on a range of historical and sociological sources, this work shows how aspects of Harry's world contain aspects of our own. It also includes chapters on the political economy of the franchise, and on the problems of studying popular culture.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "0742539598"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780742539594"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 262,
+        "printType": "BOOK",
+        "categories": [
+          "Juvenile Fiction"
+        ],
+        "averageRating": 3.5,
+        "ratingsCount": 8,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.3.3.0.preview.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=DKcWE3WXoj8C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=DKcWE3WXoj8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com.eg/books?id=DKcWE3WXoj8C&printsec=frontcover&dq=harryPotter&hl=&cd=6&source=gbs_api",
+        "infoLink": "http://books.google.com.eg/books?id=DKcWE3WXoj8C&dq=harryPotter&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Harry_Potter_and_International_Relations.html?hl=&id=DKcWE3WXoj8C"
+      },
+      "saleInfo": {
+        "country": "EG",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "EG",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.eg/books/download/Harry_Potter_and_International_Relations-sample-pdf.acsm?id=DKcWE3WXoj8C&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=DKcWE3WXoj8C&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Drawing on a range of historical and sociological sources, this work shows how aspects of Harry&#39;s world contain aspects of our own."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "Aaug_RnI-xQC",
+      "etag": "teZRetpZj2k",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/Aaug_RnI-xQC",
+      "volumeInfo": {
+        "title": "The Irresistible Rise of Harry Potter",
+        "authors": [
+          "Andrew Blake"
+        ],
+        "publisher": "Verso",
+        "publishedDate": "2002-12-17",
+        "description": "Blake's examination of the Potter phenomenon raises serious questions about the condition of the publishing industry, filmmaking, and the ways in which the Potter consumer campaign has changed ideas about literature and reading.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "1859846661"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9781859846667"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 140,
+        "printType": "BOOK",
+        "categories": [
+          "Language Arts & Disciplines"
+        ],
+        "averageRating": 5,
+        "ratingsCount": 3,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.4.4.0.preview.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=Aaug_RnI-xQC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=Aaug_RnI-xQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com.eg/books?id=Aaug_RnI-xQC&printsec=frontcover&dq=harryPotter&hl=&cd=7&source=gbs_api",
+        "infoLink": "http://books.google.com.eg/books?id=Aaug_RnI-xQC&dq=harryPotter&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/The_Irresistible_Rise_of_Harry_Potter.html?hl=&id=Aaug_RnI-xQC"
+      },
+      "saleInfo": {
+        "country": "EG",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "EG",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.eg/books/download/The_Irresistible_Rise_of_Harry_Potter-sample-pdf.acsm?id=Aaug_RnI-xQC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=Aaug_RnI-xQC&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Blake&#39;s examination of the Potter phenomenon raises serious questions about the condition of the publishing industry, filmmaking, and the ways in which the Potter consumer campaign has changed ideas about literature and reading."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "BoX-6R21MgQC",
+      "etag": "xUphHEDOIrc",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/BoX-6R21MgQC",
+      "volumeInfo": {
+        "title": "The Psychology of Harry Potter",
+        "subtitle": "An Unauthorized Examination Of The Boy Who Lived",
+        "authors": [
+          "Neil Mulholland"
+        ],
+        "publisher": "BenBella Books, Inc.",
+        "publishedDate": "2007-04-10",
+        "description": "Harry Potter has provided a portal to the wizarding world for millions of readers, but an examination of Harry, his friends and his enemies will take us on yet another journey: through the psyche of the Muggle (and wizard!) mind. The twists and turns of the series, as well as the psychological depth and complexity of J. K. Rowling’s characters, have kept fans enthralled with and puzzling over the many mysteries that permeate Hogwarts and beyond: • Do the Harry Potter books encourage disobedience? • Why is everyone so fascinated by Professor Lupin? • What exactly will Harry and his friends do when they finally pass those N.E.W.T.s? • Do even wizards live by the ticking of the clock? • Is Harry destined to end up alone? And why did it take Ron and Hermione so long to get together? Now, in The Psychology of Harry Potter, leading psychologists delve into the ultimate Chamber of Secrets, analyzing human mind and motivation by examining the themes and characters that make the Harry Potter books the bestselling fantasy series of all time. Grab a spot on the nearest couch, and settle in for some fresh revelations about our favorite young wizard!",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781935251378"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1935251376"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 338,
+        "printType": "BOOK",
+        "categories": [
+          "Literary Criticism"
+        ],
+        "averageRating": 3.5,
+        "ratingsCount": 4,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "2.3.4.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=BoX-6R21MgQC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=BoX-6R21MgQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com.eg/books?id=BoX-6R21MgQC&printsec=frontcover&dq=harryPotter&hl=&cd=8&source=gbs_api",
+        "infoLink": "http://books.google.com.eg/books?id=BoX-6R21MgQC&dq=harryPotter&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/The_Psychology_of_Harry_Potter.html?hl=&id=BoX-6R21MgQC"
+      },
+      "saleInfo": {
+        "country": "EG",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "EG",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.eg/books/download/The_Psychology_of_Harry_Potter-sample-epub.acsm?id=BoX-6R21MgQC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.eg/books/download/The_Psychology_of_Harry_Potter-sample-pdf.acsm?id=BoX-6R21MgQC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=BoX-6R21MgQC&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Now, in The Psychology of Harry Potter, leading psychologists delve into the ultimate Chamber of Secrets, analyzing human mind and motivation by examining the themes and characters that make the Harry Potter books the bestselling fantasy ..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "sKRkzVIK3foC",
+      "etag": "0V3hsb7IAu0",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/sKRkzVIK3foC",
+      "volumeInfo": {
+        "title": "Mapping the World of Harry Potter",
+        "subtitle": "Science Fiction and Fantasy Writers Explore the Best Selling Fantasy Series of All Time",
+        "authors": [
+          "Mercedes Lackey",
+          "Leah Wilson"
+        ],
+        "publisher": "Benbella Books",
+        "publishedDate": "2006-01",
+        "description": "Presents a collection of critiques of the works of J. K. Rowling, covering the topics and characters found in the Harry Potter books.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781932100594"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1932100598"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 195,
+        "printType": "BOOK",
+        "categories": [
+          "Literary Criticism"
+        ],
+        "averageRating": 4.5,
+        "ratingsCount": 6,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "2.0.0.0.preview.0",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=sKRkzVIK3foC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=sKRkzVIK3foC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com.eg/books?id=sKRkzVIK3foC&dq=harryPotter&hl=&cd=9&source=gbs_api",
+        "infoLink": "http://books.google.com.eg/books?id=sKRkzVIK3foC&dq=harryPotter&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Mapping_the_World_of_Harry_Potter.html?hl=&id=sKRkzVIK3foC"
+      },
+      "saleInfo": {
+        "country": "EG",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "EG",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=sKRkzVIK3foC&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Presents a collection of critiques of the works of J. K. Rowling, covering the topics and characters found in the Harry Potter books."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "7n_uEAAAQBAJ",
+      "etag": "71OvDyPKhI8",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/7n_uEAAAQBAJ",
+      "volumeInfo": {
+        "title": "Harry Potter and History",
+        "authors": [
+          "Nancy R. Reagin"
+        ],
+        "publisher": "Turner Publishing Company",
+        "publishedDate": "2011-04-18",
+        "description": "A guide to the history behind the world of Harry Potter--just in time for the last Harry Potter movie, Harry Potter and the Deathly Hallows (Part II) Harry Potter lives in a world that is both magical and historical. Hogwarts pupils ride an old-fashioned steam train to school, notes are taken on parchment with quill pens, and Muggle legends come to life in the form of werewolves, witches, and magical spells. This book is the first to explore the real history in which Harry's world is rooted. Did you know that bezoars and mandrakes were fashionable luxury items for centuries? Find out how Europeans first developed the potions, spells, and charms taught at Hogwarts, from Avada Kedavra to love charms. Learn how the European prosecution of witches led to the Statute of Secrecy, meet the real Nicholas Flamel, see how the Malfoys stack up against Muggle English aristocrats, and compare the history of the wizarding world to real-life history. Gives you the historical backdrop to Harry Potter's world Covers topics ranging from how real British boarding schools compare to Hogwarts to how parchment, quills, and scrolls used in the wizarding world were made Includes a timeline comparing the history of the wizarding world to Muggle \"real\" history Filled with fascinating facts and background, Harry Potter and History is an essential companion for every Harry Potter fan.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781118003268"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1118003268"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 311,
+        "printType": "BOOK",
+        "categories": [
+          "Literary Criticism"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=7n_uEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=7n_uEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com.eg/books?id=7n_uEAAAQBAJ&printsec=frontcover&dq=harryPotter&hl=&cd=10&source=gbs_api",
+        "infoLink": "http://books.google.com.eg/books?id=7n_uEAAAQBAJ&dq=harryPotter&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Harry_Potter_and_History.html?hl=&id=7n_uEAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "EG",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "EG",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.eg/books/download/Harry_Potter_and_History-sample-epub.acsm?id=7n_uEAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.eg/books/download/Harry_Potter_and_History-sample-pdf.acsm?id=7n_uEAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=7n_uEAAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "How do the Malfoys compare to Muggle English aristocrats? Who was the real Nicolas Flamel? You&#39;ll find the answers and more inside this book, the first to explore the real history behind the world of Harry Potter."
+      }
+    },
+    {
+        "kind": "books#volume",
+        "id": "h0RBDwAAQBAJ",
+        "etag": "rVt7RL6BwN4",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/h0RBDwAAQBAJ",
+        "volumeInfo": {
+          "title": "How to Cook Without a Book, Completely Updated and Revised",
+          "subtitle": "Recipes and Techniques Every Cook Should Know by Heart: A Cookbook",
+          "authors": [
+            "Pam Anderson"
+          ],
+          "publisher": "Clarkson Potter",
+          "publishedDate": "2018-08-28",
+          "description": "New York Times bestselling author Pam Anderson updates her classic cookbook—which put \"cooking by heart\" on the map—to include modern flavors and new techniques that today's home cooks will love, with new and original full-color photographs. It's been 17 years since the blockbuster How to Cook Without a Book was published, and Pam Anderson's method of mastering easy techniques to create simple, delicious meals is even more relevant today. From the working professional who loves cooking to the busy family member trying to get dinner on the table, today's modern home cook wants to master useful techniques and know how to stock pantries and refrigerators to pull together delicious meals on the fly. Understanding that most recipes are simply \"variations on a theme,\" Pam innovatively teaches technique, ultimately eliminating the need for recipes. The new edition will reflect ingredients and techniques home cooks love to use today: chicken dishes are revamped by using thighs instead of boneless skinless breasts; hearty, dark greens like kale and swiss chard replace hearts of Romaine in salads; roasted Brussels sprouts and sweet potatoes move from side dish to the main event in more meatless entrees; plus, tips for creating a whole meal using one pot or one sheet pan (instead of dirtying multiple dishes). Each chapter contains helpful at-a-glance charts that highlight the key points of every technique and a master recipe with enough variations to keep you going until you've learned how to cook without a book.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9781524761677"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "1524761672"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": false
+          },
+          "pageCount": 274,
+          "printType": "BOOK",
+          "categories": [
+            "Cooking"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": true,
+          "contentVersion": "1.5.5.0.preview.2",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=h0RBDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=h0RBDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com.eg/books?id=h0RBDwAAQBAJ&printsec=frontcover&dq=cook&hl=&cd=1&source=gbs_api",
+          "infoLink": "https://play.google.com/store/books/details?id=h0RBDwAAQBAJ&source=gbs_api",
+          "canonicalVolumeLink": "https://play.google.com/store/books/details?id=h0RBDwAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "EG",
+          "saleability": "FOR_SALE",
+          "isEbook": true,
+          "listPrice": {
+            "amount": 690.89,
+            "currencyCode": "EGP"
+          },
+          "retailPrice": {
+            "amount": 690.89,
+            "currencyCode": "EGP"
+          },
+          "buyLink": "https://play.google.com/store/books/details?id=h0RBDwAAQBAJ&rdid=book-h0RBDwAAQBAJ&rdot=1&source=gbs_api",
+          "offers": [
+            {
+              "finskyOfferType": 1,
+              "listPrice": {
+                "amountInMicros": 690890000,
+                "currencyCode": "EGP"
+              },
+              "retailPrice": {
+                "amountInMicros": 690890000,
+                "currencyCode": "EGP"
+              }
+            }
+          ]
+        },
+        "accessInfo": {
+          "country": "EG",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com.eg/books/download/How_to_Cook_Without_a_Book_Completely_Up-sample-epub.acsm?id=h0RBDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=h0RBDwAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "The new edition will reflect ingredients and techniques home cooks love to use today: chicken dishes are revamped by using thighs instead of boneless skinless breasts; hearty, dark greens like kale and swiss chard replace hearts of Romaine ..."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "746ZIylVO60C",
+        "etag": "0nJJzyClDDU",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/746ZIylVO60C",
+        "volumeInfo": {
+          "title": "What, Me Cook?",
+          "subtitle": "Rescuing the Family Dinner",
+          "authors": [
+            "Ginnie Shugert",
+            "Virginia (Ginnie) Shugert"
+          ],
+          "publisher": "Tate Publishing",
+          "publishedDate": "2009-11",
+          "description": "I don't have time to stop at the store. I haven't laid anything out to thaw, and Johnny has practice at 6:30! We'll just run through the drive-through. Is this what your afternoons look like? Well, take heart. Join author Ginnie Shugert as she offers no-nonsense tips and suggestions for reorganizing and re-equipping your kitchen to do what it was intended to do. Let What, Me Cook? Rescuing the Family Dinner help you conquer your fear of food, master the mess of cleaning up, and dazzle your family with wholesome, delicious meals every day! Unlike most cookbooks, which give instructions for specific dishes to people who already know how to cook, What, Me Cook? helps readers get ready to get ready, providing basic steps in a fun and easy-to-read fashion. It introduces some seemingly mundane details that can turn frustration to success. Ideas like counting back cooking time or having a Saturday cooking marathon. What, Me Cook? is about your kitchen, your family, and your nutrition. If you're tired of fast food and ready to get reacquainted with your family, then plot your course, plan your time, and let's have dinner! You can do it, and your family is worth it!",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9781607996408"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "1607996405"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": true
+          },
+          "pageCount": 184,
+          "printType": "BOOK",
+          "categories": [
+            "Cooking"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "2.3.2.0.preview.1",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=746ZIylVO60C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=746ZIylVO60C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com.eg/books?id=746ZIylVO60C&printsec=frontcover&dq=cook&hl=&cd=2&source=gbs_api",
+          "infoLink": "http://books.google.com.eg/books?id=746ZIylVO60C&dq=cook&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/What_Me_Cook.html?hl=&id=746ZIylVO60C"
+        },
+        "saleInfo": {
+          "country": "EG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "EG",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com.eg/books/download/What_Me_Cook-sample-pdf.acsm?id=746ZIylVO60C&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=746ZIylVO60C&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Is this what your afternoons look like? Well, take heart. Join author Ginnie Shugert as she offers no-nonsense tips and suggestions for reorganizing and re-equipping your kitchen to do what it was intended to do. Let What, Me Cook?"
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "0d7xhuJrxG0C",
+        "etag": "Y7M71se/HnE",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/0d7xhuJrxG0C",
+        "volumeInfo": {
+          "title": "How I Learned To Cook",
+          "subtitle": "Culinary Educations from the World's Greatest Chefs",
+          "authors": [
+            "Kimberly Witherspoon",
+            "Peter Meehan"
+          ],
+          "publisher": "Bloomsbury Publishing USA",
+          "publishedDate": "2008-12-09",
+          "description": "Before he was a top chef, Tom Colicchio learned to love cooking when he was still slinging burgers at a poolside snack bar. Barbara Lynch tells the story of lying her way into her first chef's job and then needing to cook her way out of trouble in the galley kitchen of a ship at sea. Stories of mentorship abound: Rick Bayless tells the story of finally working with Julia Child, his childhood hero; Gary Danko of earning the trust of the legendary Madeleine Kamman. How I Learned to Cook is an irresistible treat, a must-have for anyone who loves food and wants a look into the lives of the men and women who masterfully prepare it.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9781596919396"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "1596919396"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": true
+          },
+          "pageCount": 322,
+          "printType": "BOOK",
+          "categories": [
+            "Cooking"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": true,
+          "contentVersion": "0.7.5.0.preview.3",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=0d7xhuJrxG0C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=0d7xhuJrxG0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com.eg/books?id=0d7xhuJrxG0C&printsec=frontcover&dq=cook&hl=&cd=3&source=gbs_api",
+          "infoLink": "https://play.google.com/store/books/details?id=0d7xhuJrxG0C&source=gbs_api",
+          "canonicalVolumeLink": "https://play.google.com/store/books/details?id=0d7xhuJrxG0C"
+        },
+        "saleInfo": {
+          "country": "EG",
+          "saleability": "FOR_SALE",
+          "isEbook": true,
+          "listPrice": {
+            "amount": 369.52,
+            "currencyCode": "EGP"
+          },
+          "retailPrice": {
+            "amount": 369.52,
+            "currencyCode": "EGP"
+          },
+          "buyLink": "https://play.google.com/store/books/details?id=0d7xhuJrxG0C&rdid=book-0d7xhuJrxG0C&rdot=1&source=gbs_api",
+          "offers": [
+            {
+              "finskyOfferType": 1,
+              "listPrice": {
+                "amountInMicros": 369520000,
+                "currencyCode": "EGP"
+              },
+              "retailPrice": {
+                "amountInMicros": 369520000,
+                "currencyCode": "EGP"
+              }
+            }
+          ]
+        },
+        "accessInfo": {
+          "country": "EG",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com.eg/books/download/How_I_Learned_To_Cook-sample-epub.acsm?id=0d7xhuJrxG0C&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "pdf": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com.eg/books/download/How_I_Learned_To_Cook-sample-pdf.acsm?id=0d7xhuJrxG0C&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=0d7xhuJrxG0C&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Barbara Lynch tells the story of lying her way into her first chef&#39;s job and then needing to cook her way out of trouble in the galley kitchen of a ship at sea."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "lI_ODwAAQBAJ",
+        "etag": "pKQ0gh7CVI8",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/lI_ODwAAQBAJ",
+        "volumeInfo": {
+          "title": "My First Cookbook",
+          "subtitle": "Fun recipes to cook together . . . with as much mixing, rolling, scrunching, and squishing as possible!",
+          "authors": [
+            "America's Test Kitchen Kids"
+          ],
+          "publisher": "America's Test Kitchen",
+          "publishedDate": "2020-03-03",
+          "description": "From the creators of NYT Bestseller The Complete Cookbook for Young Chefs, America's Test Kitchen and an army of kid recipe testers, this awesome new cooking collection will get 5 to 8 year olds (and their grown-ups!) into the kitchen doing fun food projects together! My First Cookbook will inspire the youngest chefs to enter the kitchen, empower them to cook, and engage their creativity--plus they'll have fun doing it. From simple after-school snacks, family meals, and holiday celebration recipes, each beginner recipe is developed by America's Test Kitchen Kids before being kid-tested and kid-approved.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9781948703222"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "194870322X"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": true
+          },
+          "pageCount": 194,
+          "printType": "BOOK",
+          "categories": [
+            "Juvenile Nonfiction"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "1.2.1.0.preview.1",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=lI_ODwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=lI_ODwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com.eg/books?id=lI_ODwAAQBAJ&printsec=frontcover&dq=cook&hl=&cd=4&source=gbs_api",
+          "infoLink": "http://books.google.com.eg/books?id=lI_ODwAAQBAJ&dq=cook&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/My_First_Cookbook.html?hl=&id=lI_ODwAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "EG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "EG",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com.eg/books/download/My_First_Cookbook-sample-pdf.acsm?id=lI_ODwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=lI_ODwAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "My First Cookbook will inspire the youngest chefs to enter the kitchen, empower them to cook, and engage their creativity--plus they&#39;ll have fun doing it."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "fLtEAQAAMAAJ",
+        "etag": "HAGKMuF6+ck",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/fLtEAQAAMAAJ",
+        "volumeInfo": {
+          "title": "The American Cook Book",
+          "subtitle": "A Selection of Choice Recipes, Original and Selected During a Period of Forty Years' Practical Housekeeping",
+          "authors": [
+            "Fanny Lemira Gillette"
+          ],
+          "publishedDate": "1887",
+          "industryIdentifiers": [
+            {
+              "type": "OTHER",
+              "identifier": "UOM:39015093191453"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": true
+          },
+          "pageCount": 154,
+          "printType": "BOOK",
+          "categories": [
+            "Carving (Meat, etc.)"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "0.4.4.0.full.1",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=fLtEAQAAMAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=fLtEAQAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com.eg/books?id=fLtEAQAAMAAJ&printsec=frontcover&dq=cook&hl=&cd=5&source=gbs_api",
+          "infoLink": "https://play.google.com/store/books/details?id=fLtEAQAAMAAJ&source=gbs_api",
+          "canonicalVolumeLink": "https://play.google.com/store/books/details?id=fLtEAQAAMAAJ"
+        },
+        "saleInfo": {
+          "country": "EG",
+          "saleability": "FREE",
+          "isEbook": true,
+          "buyLink": "https://play.google.com/store/books/details?id=fLtEAQAAMAAJ&rdid=book-fLtEAQAAMAAJ&rdot=1&source=gbs_api"
+        },
+        "accessInfo": {
+          "country": "EG",
+          "viewability": "ALL_PAGES",
+          "embeddable": true,
+          "publicDomain": true,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false,
+            "downloadLink": "http://books.google.com.eg/books/download/The_American_Cook_Book.epub?id=fLtEAQAAMAAJ&hl=&output=epub&source=gbs_api"
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=fLtEAQAAMAAJ&hl=&source=gbs_api",
+          "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+          "quoteSharingAllowed": false
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "bEIbAAAAYAAJ",
+        "etag": "qG5nKKsMCAQ",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/bEIbAAAAYAAJ",
+        "volumeInfo": {
+          "title": "Miss Parloa's New Cook Book",
+          "subtitle": "A Guide to Marketing and Cooking",
+          "authors": [
+            "Maria Parloa"
+          ],
+          "publishedDate": "1881",
+          "industryIdentifiers": [
+            {
+              "type": "OTHER",
+              "identifier": "HARVARD:RSLZCT"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": true
+          },
+          "pageCount": 460,
+          "printType": "BOOK",
+          "categories": [
+            "Cooking, American"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "0.6.11.0.full.1",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=bEIbAAAAYAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=bEIbAAAAYAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com.eg/books?id=bEIbAAAAYAAJ&printsec=frontcover&dq=cook&hl=&cd=6&source=gbs_api",
+          "infoLink": "https://play.google.com/store/books/details?id=bEIbAAAAYAAJ&source=gbs_api",
+          "canonicalVolumeLink": "https://play.google.com/store/books/details?id=bEIbAAAAYAAJ"
+        },
+        "saleInfo": {
+          "country": "EG",
+          "saleability": "FREE",
+          "isEbook": true,
+          "buyLink": "https://play.google.com/store/books/details?id=bEIbAAAAYAAJ&rdid=book-bEIbAAAAYAAJ&rdot=1&source=gbs_api"
+        },
+        "accessInfo": {
+          "country": "EG",
+          "viewability": "ALL_PAGES",
+          "embeddable": true,
+          "publicDomain": true,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false,
+            "downloadLink": "http://books.google.com.eg/books/download/Miss_Parloa_s_New_Cook_Book.epub?id=bEIbAAAAYAAJ&hl=&output=epub&source=gbs_api"
+          },
+          "pdf": {
+            "isAvailable": true,
+            "downloadLink": "http://books.google.com.eg/books/download/Miss_Parloa_s_New_Cook_Book.pdf?id=bEIbAAAAYAAJ&hl=&output=pdf&sig=ACfU3U2I24UWIPbsrDCvS9lqu8vBKaMOKQ&source=gbs_api"
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=bEIbAAAAYAAJ&hl=&source=gbs_api",
+          "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+          "quoteSharingAllowed": false
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "8mMDq4eUM0IC",
+        "etag": "gIrK0/kVwbI",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/8mMDq4eUM0IC",
+        "volumeInfo": {
+          "title": "The Sensible Cook",
+          "subtitle": "Dutch Foodways in the Old and New World",
+          "authors": [
+            "Peter G. Rose"
+          ],
+          "publisher": "Syracuse University Press",
+          "publishedDate": "1998-09-01",
+          "description": "The most favored Dutch cookbook of the seventeenth century, The Sensible Cook (De Verstandige Kock) had a major impact on the foodways of the Dutch in the Netherlands and in their New World territories. As a part of the larger work, The Pleasurable Country Life, The Sensible Cook records the foodways of rich middle-class households, the cooking methods and typical dishes they prepared, and the implements and ingredients they employed. Often the recipes are surprisingly sophisticated. From braising a chicken with orange peel and cinnamon to stuffing pigeons with a mixture of parsley, ginger, sugar, butter, and raisins, many of the dishes are still appealing today. Peter G. Rose has, in fact, adapted some two dozen of the recipes for contemporary use—tempting dishes such as “Shoemaker’s Cake,” a delicious combination of bread crumbs, butter, eggs, and stewed apples. Handsomely illustrated with Dutch genre paintings, The Sensible Cook will interest cooks, food historians, students of social and cultural history, and the large number of Dutch descendants in America. Most important, this book will be welcomed by all who enjoy good food.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_10",
+              "identifier": "081560503X"
+            },
+            {
+              "type": "ISBN_13",
+              "identifier": "9780815605034"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": true
+          },
+          "pageCount": 170,
+          "printType": "BOOK",
+          "categories": [
+            "Cooking"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "0.3.5.0.preview.1",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=8mMDq4eUM0IC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=8mMDq4eUM0IC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com.eg/books?id=8mMDq4eUM0IC&printsec=frontcover&dq=cook&hl=&cd=7&source=gbs_api",
+          "infoLink": "http://books.google.com.eg/books?id=8mMDq4eUM0IC&dq=cook&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/The_Sensible_Cook.html?hl=&id=8mMDq4eUM0IC"
+        },
+        "saleInfo": {
+          "country": "EG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "EG",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com.eg/books/download/The_Sensible_Cook-sample-pdf.acsm?id=8mMDq4eUM0IC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=8mMDq4eUM0IC&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Most important, this book will be welcomed by all who enjoy good food."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "eunplCyCywoC",
+        "etag": "BZRrlaebnVo",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/eunplCyCywoC",
+        "volumeInfo": {
+          "title": "The Appledore Cook Book",
+          "subtitle": "Containing Practical Receipts for Plain and Rich Cooking",
+          "authors": [
+            "Maria Parloa"
+          ],
+          "publisher": "Andrews McMeel Publishing",
+          "publishedDate": "2013-07-16",
+          "description": "Published in 1872 in Boston, The Appledore Cook Book was authored by renowned cooking teacher and writer Maria Parloa to be a go-to cookbook for new brides and housekeepers, and it was specifically geared toward simpler recipes with less expensive ingredients. This first of many cookbooks by Parloa was inspired by her time spent cooking at the Appledore House hotel on the Isles of Shoals, Maine. The Appledore Cook Book contains the first known recipe for tomato chowder (known today as tomato soup) as well as delectable family-sized recipes such as Lamb Chops, Dumplings for Soup, Baked Potatoes, Fried Ham, Buckwheat Cakes, Apple Cake, Ginger Snaps, and Pumpkin Pie. Emphasizing the purpose of this popular cookbook, Parloa states in the preface, “The great trouble with all the cook books which I have known . . . is, that they are too expensive, and that they use weight instead of measure, and also that they take for granted that the young housekeeper knows many things which she really does not.” With The Appledore Cook Book, Parloa provides just such a cookbook of simple-yet-tasty, inexpensive meals—a theme as popular in the 19th century as it is today. This edition of The Appledore Cook Book was reproduced by permission from the volume in the collection of the American Antiquarian Society, Worcester, Massachusetts. Founded in 1812 by Isaiah Thomas, a Revolutionary War patriot and successful printer and publisher, the society is a research library documenting the lives of Americans from the colonial era through 1876. The society collects, preserves, and makes available as complete a record as possible of the printed materials from the early American experience. The cookbook collection comprises approximately 1,100 volumes.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9781449432072"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "1449432077"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": true
+          },
+          "pageCount": 214,
+          "printType": "BOOK",
+          "categories": [
+            "Cooking"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": true,
+          "contentVersion": "1.2.2.0.preview.3",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=eunplCyCywoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=eunplCyCywoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com.eg/books?id=eunplCyCywoC&printsec=frontcover&dq=cook&hl=&cd=8&source=gbs_api",
+          "infoLink": "https://play.google.com/store/books/details?id=eunplCyCywoC&source=gbs_api",
+          "canonicalVolumeLink": "https://play.google.com/store/books/details?id=eunplCyCywoC"
+        },
+        "saleInfo": {
+          "country": "EG",
+          "saleability": "FOR_SALE",
+          "isEbook": true,
+          "listPrice": {
+            "amount": 131.61,
+            "currencyCode": "EGP"
+          },
+          "retailPrice": {
+            "amount": 131.61,
+            "currencyCode": "EGP"
+          },
+          "buyLink": "https://play.google.com/store/books/details?id=eunplCyCywoC&rdid=book-eunplCyCywoC&rdot=1&source=gbs_api",
+          "offers": [
+            {
+              "finskyOfferType": 1,
+              "listPrice": {
+                "amountInMicros": 131610000,
+                "currencyCode": "EGP"
+              },
+              "retailPrice": {
+                "amountInMicros": 131610000,
+                "currencyCode": "EGP"
+              }
+            }
+          ]
+        },
+        "accessInfo": {
+          "country": "EG",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com.eg/books/download/The_Appledore_Cook_Book-sample-epub.acsm?id=eunplCyCywoC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "pdf": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com.eg/books/download/The_Appledore_Cook_Book-sample-pdf.acsm?id=eunplCyCywoC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=eunplCyCywoC&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "This edition of The Appledore Cook Book was reproduced by permission from the volume in the collection of the American Antiquarian Society, Worcester, Massachusetts."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "VlkX-OkZEHkC",
+        "etag": "eqh+9RV9PUg",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/VlkX-OkZEHkC",
+        "volumeInfo": {
+          "title": "The Can't Cook Book",
+          "subtitle": "Recipes for the Absolutely Terrified!",
+          "authors": [
+            "Jessica Seinfeld"
+          ],
+          "publisher": "Simon and Schuster",
+          "publishedDate": "2013-10-08",
+          "description": "From the #1 New York Times bestselling author of Deceptively Delicious, an essential collection of more than 100 simple recipes that will transform even the most kitchen-phobic “Can’t Cooks” into “Can Cooks.” Are you smart enough to dodge a telemarketer yet clueless as to how to chop a clove of garlic? Are you clever enough to forward an e-mail but don’t know the difference between broiling and baking? Ingenious enough to operate a blow-dryer but not sure how to use your blender? If you are basically competent, then Jessica Seinfeld’s The Can’t Cook Book is for you. If you find cooking scary or stressful or just boring, Jessica has a calm, confidencebuilding approach to cooking, even for those who’ve never followed a recipe or used an oven. Jessica shows you how to prepare deliciously simple food—from Caesar salad, rice pilaf, and roasted asparagus to lemon salmon, roast chicken, and flourless fudge cake. At the beginning of each dish, she explains up front what the challenge will be, and then shows you exactly how to overcome any hurdles in easy-to-follow, step-by-step instructions. Designed to put the nervous cook at ease, The Can’t Cook Book is perfect for anyone who wants to gain confidence in the kitchen—and, who knows, maybe even master a meal or two.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9781451666328"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "1451666322"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": false
+          },
+          "pageCount": 256,
+          "printType": "BOOK",
+          "categories": [
+            "Cooking"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": true,
+          "contentVersion": "1.12.13.0.preview.2",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=VlkX-OkZEHkC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=VlkX-OkZEHkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com.eg/books?id=VlkX-OkZEHkC&printsec=frontcover&dq=cook&hl=&cd=9&source=gbs_api",
+          "infoLink": "https://play.google.com/store/books/details?id=VlkX-OkZEHkC&source=gbs_api",
+          "canonicalVolumeLink": "https://play.google.com/store/books/details?id=VlkX-OkZEHkC"
+        },
+        "saleInfo": {
+          "country": "EG",
+          "saleability": "FOR_SALE",
+          "isEbook": true,
+          "listPrice": {
+            "amount": 812.74,
+            "currencyCode": "EGP"
+          },
+          "retailPrice": {
+            "amount": 812.74,
+            "currencyCode": "EGP"
+          },
+          "buyLink": "https://play.google.com/store/books/details?id=VlkX-OkZEHkC&rdid=book-VlkX-OkZEHkC&rdot=1&source=gbs_api",
+          "offers": [
+            {
+              "finskyOfferType": 1,
+              "listPrice": {
+                "amountInMicros": 812740000,
+                "currencyCode": "EGP"
+              },
+              "retailPrice": {
+                "amountInMicros": 812740000,
+                "currencyCode": "EGP"
+              }
+            }
+          ]
+        },
+        "accessInfo": {
+          "country": "EG",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+          "epub": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com.eg/books/download/The_Can_t_Cook_Book-sample-epub.acsm?id=VlkX-OkZEHkC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=VlkX-OkZEHkC&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Ingenious enough to operate a blow-dryer but not sure how to use your blender? If you are basically competent, then Jessica Seinfeld’s The Can’t Cook Book is for you."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "M2zEZDygCkYC",
+        "etag": "1WGhwbCs98k",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/M2zEZDygCkYC",
+        "volumeInfo": {
+          "title": "Cook Islands Cook Book",
+          "authors": [
+            "Taiora Matenga-Smith"
+          ],
+          "publisher": "editorips@usp.ac.fj",
+          "publishedDate": "1990",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_10",
+              "identifier": "9820200245"
+            },
+            {
+              "type": "ISBN_13",
+              "identifier": "9789820200241"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": true
+          },
+          "pageCount": 104,
+          "printType": "BOOK",
+          "categories": [
+            "Cook Islands"
+          ],
+          "averageRating": 5,
+          "ratingsCount": 1,
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "0.2.4.0.preview.1",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=M2zEZDygCkYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=M2zEZDygCkYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com.eg/books?id=M2zEZDygCkYC&printsec=frontcover&dq=cook&hl=&cd=10&source=gbs_api",
+          "infoLink": "http://books.google.com.eg/books?id=M2zEZDygCkYC&dq=cook&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Cook_Islands_Cook_Book.html?hl=&id=M2zEZDygCkYC"
+        },
+        "saleInfo": {
+          "country": "EG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "EG",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com.eg/books/download/Cook_Islands_Cook_Book-sample-pdf.acsm?id=M2zEZDygCkYC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=M2zEZDygCkYC&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        }
+      }
+    ]
+  }
