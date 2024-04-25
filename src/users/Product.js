@@ -9,20 +9,37 @@ import Image from 'react-bootstrap/Image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 import Reviews from "./Reviews";
+import axios from "../api/axios";
+import useRefresh from "../hook/useRefresh";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchProduct } from "../rtk/slices/productSlice";
 
 function Product() {
-    let params = useParams();
-    const [product, setProduct] = useState();
-
+    const params = useParams();
+    const [product, setProduct] = useState({});
+    const refresh = useRefresh();
     useEffect(() => {
-        fetch(`http://localhost:9000/items/${params.id}`)
-            .then((res) => res.json())
-            .then((product) => setProduct(product));
-    }, []);
+        const fetchProductInfo = async () => {
+            try {
+                const accessToken = await refresh();
+                console.log("access token: " + accessToken);
+                const response = await axios(`/books/${params.id}`, {
+                    headers: {
+                        Authorization: `Bearer ${accessToken}`,
+                    },
+                });
+                setProduct(response.data);
+            } catch (error) {
+                console.error('Failed to fetch product:', error);
+            }
+        };
 
-    if (!product || !product.saleInfo) return null;
+        fetchProductInfo();
+    }, [params.id]);
 
-    const amount = product.saleInfo.listPrice && product.saleInfo.listPrice.amount ? product.saleInfo.listPrice.amount : "NULL";
+    if (!product) return null;
+
+    const amount = product.price ? product.price : "NULL";
 
     return (
         <>
@@ -31,7 +48,7 @@ function Product() {
                 <Row>
                     <Col sm={5} className="book-main-info">
                         <div className="fixed-content">
-                            <Image src={product.volumeInfo.imageLinks.thumbnail} fluid className="book-image" />
+                            <Image src={product.image} fluid className="book-image" />
                             <p>{amount}$ EG</p>
                             <button className="button type1">
                                 <span className="btn-txt">Add to cart</span>
@@ -47,24 +64,27 @@ function Product() {
                         </div>
                     </Col>
                     <Col sm={7} className="book-additional-info">
-                        <h3>{product.volumeInfo.title}</h3>
+                        <h3>{product.title}</h3>
                         <div className="authors">
-                            {product.volumeInfo.authors.map((author, index) => (
-                                <span key={index} className="author">{author},</span>
-                            ))}
+                            {product.author }
                         </div>
                         <span className="desc">Book Description</span>
-                        <p className="des">{product.volumeInfo.description}</p>
+                        <p className="des">{product.description}</p>
                         <div className="cats">
                             <span className="word">Categories:</span>
-                            {product.volumeInfo.categories.map((category, index) => (
-                                <span key={index} className="cat">{category}</span>
-                            ))}
+                            {product.categories }
                         </div>
-                        <p className="publ"><span>Publisher:</span> {product.volumeInfo.publisher}</p>
-                        <p>First published at {product.volumeInfo.publishedDate}</p>
-                        <p>{product.volumeInfo.pageCount} pages</p>
+                        <p className="publ"><span>Publisher:</span> {product.publishername}</p>
+                        <p>First published at {product.publishingdate}</p>
+                        <p>{/*page counts*/100} pages</p>
                         <Reviews productId={params.id}/>
+                        <ul>
+                        {product.reviews && product.reviews.map((review, index) => (
+    <li key={index}>
+        <p>Review: {review}</p>
+    </li>
+))}
+            </ul>
                     </Col>
                 </Row>
             </Container>

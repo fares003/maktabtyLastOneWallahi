@@ -9,10 +9,13 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import Button from 'react-bootstrap/Button';
 import "../style/products.css"
 import { Link } from "react-router-dom";
+import useRefresh from "../hook/useRefresh";
 function Products() {
   const dispatch = useDispatch();
 
   const products = useSelector((state) => state.products);
+  const refresh=useRefresh()
+
   console.log(products);
   useEffect(() => {
     dispatch(fetchProducts())
@@ -20,25 +23,26 @@ function Products() {
   return (
     <>
       <NavBar />
-
+    
       <Container className="products_container">
         <Row>
 
           {products.map((product) => {
             //console.log(product.saleInfo.listPrice.amount)
-            if (!product || !product.saleInfo) return "null";
+            if (!product ) return "null";
 
             // Check if listPrice and amount are defined
-            const amount = product.saleInfo.listPrice && product.saleInfo.listPrice.amount ? product.saleInfo.listPrice.amount : "NULL";
+            const amount = product.price && product.price ? product.price : "NULL";
 
             return (
               <Col>
-                <Link to={`/products/${product.id}`} class="card">
+             
+                <Link to={`/products/${product._id}`} class="card">
                   <div class="image_container">
-                    <img className="image" src={product.volumeInfo.imageLinks.thumbnail}></img>
+                    <img className="image" src={product.image}></img>
                   </div>
                   <div class="title">
-                    <span>{product.volumeInfo.title}</span>
+                    <span>{product.title}</span>
                   </div>
 
                   <div class="action">

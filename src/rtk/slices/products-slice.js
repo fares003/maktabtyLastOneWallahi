@@ -1,14 +1,28 @@
+// import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+// import axios from '../../api/axios';
+
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-
-
-
-
-export const fetchProducts =createAsyncThunk("product_slice/fetchProducts",async ()=> 
-{
-const res=await fetch("http://localhost:9000/items");
-const data= await res.json();
-return data;
-})
+import axios from '../../api/axios'
+import useRefresh from'../../hook/useRefresh'
+export const fetchProducts = createAsyncThunk(
+    "products_slice/fetchProducts",
+    async () => {
+        const refresh = useRefresh();
+        try {
+            const accessToken = await refresh();
+            console.log("access token: " + accessToken);
+            const res = await axios.get("/books", {
+                headers: {
+                    Authorization: `Bearer ${accessToken}`,
+                },
+            });
+            return res.data;
+        } catch (error) {
+            console.error('Failed to fetch products:', error);
+            throw error;
+        }
+    }
+  );
 const products_slice=createSlice({
     initialState:[],
     name:"products_slice",

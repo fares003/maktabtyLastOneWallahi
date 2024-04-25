@@ -7,6 +7,7 @@ import Cart from './users/Cart';
 import Product from './users/Product';
 import Signin from './common-components/Signin';
 import Signup from './common-components/Signup';
+import Add from './Admin/Add';
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
   <Route path='/products' element={<Products/>}/>
   <Route path='/cart' element={<Cart/>}/>
   <Route path='/products/:id' element={<Product/>}/>
+  <Route path='/Add' element={<Add/>}/>
  
 </Routes>
 
