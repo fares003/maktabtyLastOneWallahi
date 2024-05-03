@@ -1,16 +1,23 @@
 import { useState } from "react";
 import axios from "../api/axios";
 import NavBar from "./Navbar";
-import { useNavigate } from "react-router-dom";
-
+import { useNavigate, useLocation } from "react-router-dom";
+import useAuth from "../hook/useAuth";
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const SIGNIN_URL = '/login';
 
 function Signin() {
+    const { setAuth } = useAuth()
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [errMsg, setErrMsg] = useState('');
     const [success, setSuccess] = useState(false);
-    const Navigate=useNavigate()
+    const [roles, setRoles] = useState([]); // Initialize roles as an empty array
+    const Navigate = useNavigate()
+    const location = useLocation()
+    const from = location.state?.from?.pathname || '/'
+
     const handleSubmit = async (e) => {
         e.preventDefault();
 
@@ -20,22 +27,30 @@ function Signin() {
                 withCredentials: true
             });
 
-            console.log(res.data);
-            console.log(res.data.accessToken);
+            console.log(JSON.stringify(res.data.result.roles));
+            const accessToken = res.data.accessToken;
+            const roles = res.data.roles;
+            const firstname=res.data.result.firstname
+            const lastname=res.data.result.lastname
+            const id=res.data.id
+
+           // Set the roles array in the component state
+            setAuth({ email, password, accessToken,  roles,firstname,lastname,id });
             setSuccess(true);
 
-       
-                setTimeout(() => {
-                    Navigate('/')
-                }, 1000);
-            
+            setTimeout(() => {
+                Navigate(from, { replace: true })
+            }, 1000);
+
         } catch (error) {
-            if (!error.response) {
+            if (!error?.response) {
                 setErrMsg('No server response');
-            } else if (error.response.status === 409) {
-                setErrMsg('This email is already in use');
+            } else if (error.response.status === 400) {
+                setErrMsg('Missing email or password');
+            } else if (error.response.status === 401) {
+                setErrMsg('Unauthorized');
             } else {
-                setErrMsg('Login failed');
+                setErrMsg('Login failed')
             }
         }
     };
@@ -45,9 +60,10 @@ function Signin() {
             <NavBar />
             <form className="container signup-container" onSubmit={handleSubmit}>
                 <div className="cardy">
-                    <a className="signup">Login</a>
+                    <h2 className="signup">Login</h2>
 
                     <div className="inputBox1">
+                    {/* <FontAwesomeIcon icon={faEnvelope} /> */}
                         <input type="text" required value={email} onChange={(e) => setEmail(e.target.value)} />
                         <span className="user">Email</span>
                     </div>

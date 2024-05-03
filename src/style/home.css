@@ -7,16 +7,15 @@
     --section-background: #ececec;
   }
 
-.navegator{
-    background-color: white !important;
+/* .navegator{
     -webkit-box-shadow: 0 0 10px #ddd;
     -moz-box-shadow: 0 0 10px #ddd;
     box-shadow: 0 0 10px #ddd;
-}
-.navegator a:hover{
+} */
+/* .navegator a:hover{
     color: var(--main-color-alt) !important;
     transition: var(--main-transition);
-}
+} */
 
 .landing-container{
     background-color: var(--main-color);
@@ -76,3 +75,114 @@ position: relative;
 z-index: 2;
 
 }
+.search-landing-area{
+    background-color: var(--section-background);
+}
+.search{
+    width: fit-content !important;
+    margin-top: 10px !important;
+    display: flex;
+    justify-content: center;
+}
+.search .input-group{
+    width: fit-content;
+}
+.img{
+    max-width: 500px;
+    max-height:1000px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 50px !important;
+}
+.land{
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+    font-weight: 600;
+    align-items: right;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: "Jersey 15", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.land:nth-child(1){
+    border: 1px solid blueviolet;
+    color: blueviolet;
+
+
+}
+.land:nth-child(2){
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+
+}
+.land:nth-child(3){
+    border: 1px solid rgb(142, 0, 0);
+    color: rgb(142, 0, 0);
+
+}
+.land:nth-child(4){
+    border: 1px solid burlywood;
+    color: burlywood;
+
+}
+.icon1{
+    color: blueviolet;
+}
+.icon2{
+    color: var(--main-color);
+}
+.icon3{
+    color: rgb(142, 0, 0);
+}
+.icon4{
+    color: burlywood;
+}
+.username{
+    margin-left: 20px;
+    color: white;
+}
+.bar-img{
+    width: 150px;
+    height: 50px;
+}
+.num{
+    background-color: #820000;
+    border-radius: 2.5px;
+    color: white;
+    padding: 5px;
+    width: 30px;
+    height:  30px;
+    margin-left: 10px;
+
+}
+@media (max-width: 770px){
+    .bar-img {
+        width: 100px;
+        height: 50px;
+  }
+  .why-us{
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+  .sales-col{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .first-img{
+    display: none;
+  }
+  .img{
+    max-width: 340px;
+    margin-bottom: 15px;
+    
+  }
+  }

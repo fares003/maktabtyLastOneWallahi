@@ -29,3 +29,20 @@ width: fit-content;
     padding: 8px 14px;
     border: 1px solid rgb(219, 213, 213);
   }
+  p.review{
+    display: flex;
+    border-bottom: 1px solid #c2c2c2;
+    padding-bottom: 30px;
+    padding-top: 10px;
+
+  }
+  .user-info{
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .user-info p{
+text-align: left;
+  }

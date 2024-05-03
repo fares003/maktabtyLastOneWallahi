@@ -3,7 +3,7 @@
     flex-direction: column;
     gap: 10px;
     max-width: 600px;
-    background-color: #355891;
+    background-color: #212529;
     padding: 20px;
     border-radius: 10px;
     position: relative;
@@ -96,7 +96,7 @@
   
   .fancy {
     background-color: white;
-    border: 2px solid #355891;
+    border: 2px solid rgb(142, 0, 0);
     border-radius: 0px;
     box-sizing: border-box;
     color: #355891;
@@ -121,7 +121,7 @@
     content: " ";
     width: 1.7rem;
     height: 2px;
-    background: #355891;
+    background: rgb(142, 0, 0);
     top: 50%;
     left: 1.5em;
     position: absolute;
@@ -140,7 +140,7 @@
     transition: all 0.3s ease-in-out;
     text-transform: lowercase;
     text-decoration: none;
-    color: #355891;
+    color: rgb(142, 0, 0);
     transform: translateX(30%);
   }
   
@@ -150,7 +150,7 @@
     top: -2px;
     left: 0.625rem;
     position: absolute;
-    background: #355891;
+    background: rgb(142, 0, 0);
     transition: width 0.5s ease-out, left 0.3s ease-out;
   }
   
@@ -160,7 +160,7 @@
     right: 1.875rem;
     bottom: -2px;
     position: absolute;
-    background: #355891;
+    background: rgb(142, 0, 0);
     transition: width 0.5s ease-out, right 0.3s ease-out;
   }
   
@@ -170,18 +170,18 @@
     right: 0.625rem;
     bottom: -2px;
     position: absolute;
-    background: #355891;
+    background: rgb(142, 0, 0);
     transition: width 0.5s ease-out, right 0.3s ease-out;
   }
   
   .fancy:hover {
     color: #355891;
-    background: #5f82a9;
+    background: rgb(142, 0, 0);
   }
   
   .fancy:hover::before {
     width: 1.5rem;
-    background: #355891;
+    background: black;
   }
   
   .fancy:hover .text {
@@ -204,7 +204,22 @@
   color: white;
 }
 .hed{
-  margin-top:100px;
-
+  margin-top:60px;
+  text-align: center;
+  width: 100%;
 }
-  
+.c{
+  margin-top: 12px;
+}
+.formy{
+  width: 100%;
+}
+@media (max-width: 770px){
+  .hed{
+    padding-top: 60px;
+
+  }
+  .form{
+    width: 320px;
+  }
+}

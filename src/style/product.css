@@ -106,23 +106,22 @@ align-items: start;
   .cats .word{
     font-size: 30px;
     font-weight: 600;
-    color: rgb(119, 119, 119);
+    color: rgb(0, 0, 0);
   }
   .cats{
     margin-bottom: 20px;
 
   }
   .cats .cat{
-    width: 60px;
+    width: fit-content;
     height: 30px;
-    background-color:rgb(119, 119, 119) ;
-    padding: 6px;
+    padding: 8px;
     border-radius: 30px;
     margin-left: 30px;
-    box-shadow: 0 0 10px #ddd;
-    color: white;
-    font-size: 15px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 6px;
+    text-align: center;
   }
   .cats .cat:hover{
 cursor: pointer;
@@ -131,11 +130,32 @@ cursor: pointer;
 font-size: 15px;
 font-weight: 600;
   }
-  .fixed-content {
-    position: fixed;
+  .book-main-info div {
     margin-top: 60px;
+    display: flex;
+    flex-direction: column;
   }
   .book-additional-info{
     padding-top: 10px;
   }
+  .contentt{
+    display: flex;
+    flex-direction: column;
+  }
+  .col ul{
+    float: left;
+    padding-left: 10px;
+    margin-top: 3px !important;
+    width: 100%;
+  }
+
+  @media (max-width: 770px){
+    .book-additional-info,
+    .book-main-info div{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
   
+  }

@@ -1,0 +1,9 @@
+.genres-cont{
+    padding-top: 100px;
+}
+.add-genre{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+}

@@ -3,6 +3,7 @@ import add from "./add.css"
 import useRefresh from "../hook/useRefresh";
 import axios from "../api/axios";
 import NavBar from "../common-components/Navbar";
+import Swal from 'sweetalert2'
 
 function Add(props){
     const [title,setTitle]=useState("");
@@ -48,9 +49,17 @@ e.preventDefault();
                 },
                 withCredentials: true
 
-            }).then((data)=>{console.log(data)});
-            
-           
+            });
+
+            Swal.fire({
+                position: "center",
+                icon: "success",
+                title: "Your work has been saved",
+                showConfirmButton: false,
+                timer: 1500
+              });
+              window.location.reload(false)
+
         } catch (error) {
             console.error('Failed to fetch products:', error);
             throw error;
@@ -101,7 +110,7 @@ e.preventDefault();
         <span>pages</span>
     </label> 
     <label>
-    <input   type="text" className="input" onChange={(e)=>{setDate( e.target.value)}} id="date"/>
+    <input   type="date" className="input" onChange={(e)=>{setDate( e.target.value)}} id="date"/>
 <span>published at</span>
     </label>
     <span className="dess">product description</span>

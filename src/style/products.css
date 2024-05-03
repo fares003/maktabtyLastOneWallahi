@@ -131,6 +131,11 @@ a{
   text-decoration: none !important;
   
 }
+.bttnn{
+  background-color: rgb(142, 0, 0) !important;
+  border: 1px solid rgb(142, 0, 0) !important;
+
+}
 .btn-23 {
   -webkit-tap-highlight-color: transparent;
   /* -webkit-appearance: button; */
@@ -165,7 +170,10 @@ a{
 .btn-23 [hidden] {
   display: none;
 }
-
+.bttn{
+  background-color: rgb(142, 0, 0) !important;
+  border: 1px solid rgb(142, 0, 0) !important;
+}
 .btn-23 {
   border-radius: 99rem;
   border-width: 2px;
@@ -206,6 +214,7 @@ a{
   opacity: 0;
 }
 
+
 @keyframes marquee {
   0% {
     transform: translateX(var(--start));
@@ -218,3 +227,21 @@ a{
   .row{
     margin-top: 100px;
   }
+  .search{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100% !important;
+  }
+  .search input{
+    width: 80% !important;
+    padding: 10px;
+  }
+  @media (max-width: 770px){
+    .product-in-products {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+  }
+  }
+ 

@@ -1,0 +1,82 @@
+
+.cart-container{
+    margin: 60px 10px;
+}
+.check-out{
+    background-color: white;
+    padding: 6px 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.check-out p{
+    display: flex;
+    justify-content: space-between;
+}
+.butt{
+    width: 100%;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+.butt button{
+    width: 100%;
+    background-color: rgb(142, 0, 0);
+    color: white;
+    border: none;
+}
+.butt button:hover{
+    background-color: rgb(170, 0, 0);
+}
+.books{
+    background-color: white;
+    padding: 30px;
+}
+.book{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    align-items: center;
+    border-bottom: 1px solid #ececec;
+    padding-bottom:10px ;
+}
+.imagee{
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+}
+.info{
+    display: flex;
+    gap: 40px;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+}
+.controlles{
+    display: flex;
+    flex-direction: column;
+justify-content: center;
+align-items: end;
+}
+.controlles Button{
+    background-color: rgb(142, 0, 0);
+
+}
+.pricee{
+    font-size: 20px;
+    font-weight: 600;
+}
+@media (max-width: 770px){
+    .pricee{
+margin-bottom: 20px;
+
+    }
+    .book{
+        flex-direction: column;
+    }
+    .check-out{
+        margin-bottom: 20px;
+    }
+    .imagee{
+        width: 100px;
+    }
+}

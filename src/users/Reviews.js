@@ -6,15 +6,22 @@ import { useState, useEffect } from "react";
 import { Rating } from "react-simple-star-rating";
 import { useParams } from "react-router-dom";
 import useRefresh from "../hook/useRefresh";
-import axios from "../api/axios";
+import useAxiosPrivate from "../hook/useAxiosPrivate";
+import useAuth from '../hook/useAuth';
+import Swal from "sweetalert2";
 
 function Reviews(props) {
+    const { auth } = useAuth();
+    const axiosPrivate=useAxiosPrivate()
+
     const [reviews, setReviews] = useState([]);
     const [updateReviews, setUpdateReviews] = useState(false);
     const [isReviewAdded, setIsReviewAdded] = useState(false);
     const [review, setReview] = useState( '');
+    const [rate, setRate] = useState( 0);
+
     const handleRatingChange = (value) => {
-        setReview(prevReview => ({ ...prevReview, stars: value }));
+       setRate(value)
     };
 
     const handleReviewChange = (event) => {
@@ -32,16 +39,17 @@ function Reviews(props) {
         try {
             const accessToken = await refresh();
             console.log("access token: " + accessToken);
-            const res = await axios.post(`/books/${props.productId}/reviews`, JSON.stringify({ reviews: review }),
-                {
-                    headers: {
-                        'content-type': 'application/json',
-                        Authorization: `Bearer ${accessToken}`,
-                    },
-                    withCredentials: true,
-                })
+            const res = await axiosPrivate.post(`/books/${props.productId}/reviews`, JSON.stringify({ review: review,rate:rate,firstname:auth.firstname,lastname:auth.lastname }))
             setUpdateReviews(prevState => !prevState);
             setIsReviewAdded(true);
+            Swal.fire({
+                position: "center",
+                icon: "success",
+                title: "Your work has been saved",
+                showConfirmButton: false,
+                timer: 1500
+              });
+              window.location.reload(false)
             setReview('');
 
             } catch (error) {
@@ -51,11 +59,11 @@ function Reviews(props) {
 
         return (
             <div className="reviews">
-                <h2>Create Review:</h2>
-                <Form onSubmit={handleSubmit}>
+                <h2>Create Review</h2>
+                <Form onSubmit={handleSubmit} className="mb-5">
                     <Form.Group className="mb-3 rating">
                         <Rating
-                            initialValue={review.stars}
+                            initialValue={rate}
                             size={24}
                             onClick={handleRatingChange}
                         />

@@ -2,6 +2,8 @@ import { useEffect, useRef, useState } from "react";
 import "../style/signup.css";
 import NavBar from "./Navbar";
 import axios from "../api/axios";
+import { useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
 const EMAIL_REGEX = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
 const PWD_REGEX =
   /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@.#$!%*?&^])[A-Za-z\d@.#$!%*?&]{8,15}$/;
@@ -31,6 +33,10 @@ function Signup() {
   const [errMsg, setErrMsg] = useState("");
   const [success, setSuccess] = useState(false);
 
+  const [image, setImage] = useState(null);
+const [imageFocus, setImageFocus] = useState(false);
+  const Navigate=useNavigate()
+
   useEffect(() => {
     const result = EMAIL_REGEX.test(email);
     setValidEmail(result);
@@ -45,46 +51,71 @@ function Signup() {
 
   useEffect(() => {
     setErrMsg("");
-  }, [firstname, lastname, pwd, pwdConfirm, email]);
-
+  }, [firstname, lastname, pwd, pwdConfirm, email, image]);
+  
+  const handleImageChange = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      setImage(file);
+    }
+  };
 
   
-const handleSubmit=async(e)=>{
-    e.preventDefault()
-    const e1=EMAIL_REGEX.test(email)
-    const e2=PWD_REGEX.test(pwd)
-if(!e1||!e2){
-setErrMsg('Invalid entry please try agin')
-return
-}
-try {
-    const res=await axios.post(REGISTER_URL,JSON.stringify({firstname,lastname,password:pwd,email}),
-    {
-headers:{'content-type':'application/json'},
-withCredentials:true,
-    })
-
-    console.log(res.data)
-    console.log(res.accessToken)
-setSuccess(true)
-} catch (error) {
-    if(!error?.res){
-    setErrMsg('no server response')
-    }else if(error.res?.status===409){
-        setErrMsg('this Email is already exist')
-    }else{
-        setErrMsg('registration failed')
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    console.log(image);
+    const e1 = EMAIL_REGEX.test(email);
+    const e2 = PWD_REGEX.test(pwd);
+    if (!e1 || !e2) {
+      setErrMsg("Invalid entry please try again");
+      return;
     }
-    ErrRef.current.focus()
-}
-}
+    try {
+      const formData = new FormData();
+      formData.append("firstname", firstname);
+      formData.append("lastname", lastname);
+      formData.append("email", email);
+      formData.append("password", pwd);
+      formData.append("image", image);
+  
+      const res = await axios.post(REGISTER_URL, formData, {
+        headers: { "content-type": "application/json" },
+        withCredentials: true,
+      });
+  
+      console.log(res.data);
+      console.log(res.accessToken);
+      setSuccess(true);
+      Swal.fire({
+        position: "center",
+        icon: "success",
+        title: "Your work has been saved",
+        showConfirmButton: false,
+        timer: 1500,
+      });
+      setTimeout(() => {
+        Navigate("/");
+      }, 2000);
+    } catch (error) {
+      if (error.response?.status === 409) {
+        setErrMsg("No server response");
+      } else if (!error.response) {
+        setErrMsg("This email is already in use");
+      } else {
+        setErrMsg("Registration failed");
+      }
+      ErrRef.current.focus();
+    }
+  };
+  
+
   return (
     <>
       <NavBar />
       <section>
         <p
           ref={ErrRef}
-          className={errMsg ? "errMsg" : "off"}
+          className={errMsg ? "errMsg1" : "off"}
           aria-live="assertive"
         >
           {errMsg}
@@ -102,6 +133,7 @@ setSuccess(true)
                   aria-invalid={validEmail ? "false" : "true"}
                   onChange={(e) => setEmail(e.target.value)}
                   aria-describedby="uidnote"
+                  autoComplete="false"
                 />
                 <span className="user">Email</span>
                 <p
@@ -122,6 +154,8 @@ setSuccess(true)
                   onFocus={() => setFirstNameFocus(true)}
                   onBlur={() => setFirstNameFocus(false)}
                   onChange={(e) => setFirstName(e.target.value)}
+                  autoComplete="false"
+
                 />
                 <span>First Name</span>
               </div>
@@ -133,6 +167,8 @@ setSuccess(true)
                   onFocus={() => setLastNameFocus(true)}
                   onBlur={() => setLastNameFocus(false)}
                   onChange={(e) => setLastName(e.target.value)}
+                  autoComplete="false"
+
                 />
                 <span>Last Name</span>
               </div>
@@ -146,6 +182,8 @@ setSuccess(true)
                   aria-invalid={validPwd ? "false" : "true"}
                   onChange={(e) => setPwd(e.target.value)}
                   aria-describedby="pidnote"
+                  autoComplete="false"
+
                 />
                 <span>Password</span>
                 <p
@@ -175,6 +213,8 @@ setSuccess(true)
                   onBlur={() => setPwdConfirmFocus(false)}
                   onChange={(e) => setPwdConfirm(e.target.value)}
                   aria-describedby="cidnote"
+                  autoComplete="false"
+
 
                 />
                 <span>Confirm Password</span>
@@ -183,7 +223,24 @@ setSuccess(true)
                     !pwdConfirmFocus && !validPwdConfirm&&pwdConfirm? "instructions" : "off"
                   } >Please Confirm Your password correctly</p>
               </div>
-
+              <div className="inputBox">
+  <input
+    type="file"
+    required="required"
+    onFocus={() => setImageFocus(true)}
+    onBlur={() => setImageFocus(false)}
+    onChange={handleImageChange}
+    aria-describedby="imageNote"
+    autoComplete="false"
+  />
+  <span>Profile Image</span>
+  <p
+    id="imageNote"
+    className={imageFocus && !image ? "instructions" : "off"}
+  >
+    Please upload your profile image.
+  </p>
+</div>
               <button className="enter" type="submit" disabled={!validEmail||!validPwd||!validPwdConfirm||!firstname||!lastname?true:false}>
                 Enter
               </button>
