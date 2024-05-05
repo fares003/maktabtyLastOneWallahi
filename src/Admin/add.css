@@ -204,7 +204,7 @@
   color: white;
 }
 .hed{
-  margin-top:60px;
+  padding-top:100px;
   text-align: center;
   width: 100%;
 }
@@ -213,6 +213,16 @@
 }
 .formy{
   width: 100%;
+}
+.genres-label{
+  color: white;
+  text-align: left;
+}
+#genres{
+outline: none;
+border: none;
+padding:10px;
+border-radius: 5px;
 }
 @media (max-width: 770px){
   .hed{

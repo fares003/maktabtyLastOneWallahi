@@ -15,6 +15,7 @@ import Footer from './common-components/Footer';
 import PersistLogin from './common-components/PresistLogin';
 import Unauthorized from './common-components/Unauthorized';
 import Genres from './Admin/Genres';
+import Payment from './common-components/Payment';
 function App() {
   const ROLES = {
     'User': 2001,
@@ -34,6 +35,7 @@ function App() {
   <Route element={<PersistLogin/>}>
   <Route element={<RequireAuth allowedRoles={[ROLES.User]}/>}>
 
+  <Route path='/payment' element={<Payment/>}/>
   <Route path='/products' element={<Products/>}/>
   <Route path='/products/:id' element={<Product/>}/>
   <Route path='/cart' element={<Cart/>}/>

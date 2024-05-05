@@ -4,6 +4,7 @@ import useRefresh from "../hook/useRefresh";
 import axios from "../api/axios";
 import NavBar from "../common-components/Navbar";
 import Swal from 'sweetalert2'
+import { useGenre } from "../context/GenresContext";
 
 function Add(props){
     const [title,setTitle]=useState("");
@@ -16,11 +17,10 @@ function Add(props){
     const [categories,setCategories]=useState('')
     const [cont,setCont]=useState('')
     const [pages,setPages]=useState('')
+    const [sale,setSale]=useState('')
+
     const refresh = useRefresh();
-
-
-
-
+    const { allGenres} = useGenre();
 
 const formSubmit=async(e)=>{
 e.preventDefault();
@@ -39,7 +39,8 @@ e.preventDefault();
                 publishingdate,
                 categories,
                 cont,
-                pages
+                pages,
+                sale
             },
             
             {
@@ -90,6 +91,10 @@ e.preventDefault();
         <span>price</span>
     </label> 
     <label>
+        <input class="input" type="text" placeholder="" required="true" onChange={(e)=>{setSale(e.target.value)}}/>
+        <span>Discount%</span>
+    </label> 
+    <label>
         <input class="input" type="text" placeholder="" required="true" onChange={(e)=>{setAuthor(e.target.value)}}/>
         <span>author</span>
     </label> 
@@ -97,10 +102,17 @@ e.preventDefault();
         <input class="input" type="text" placeholder="" required="true" onChange={(e)=>{setPublisher(e.target.value)}}/>
         <span>publisher</span>
     </label> 
-    <label>
-        <input class="input" type="text" placeholder="" required="true" onChange={(e)=>{setCategories(e.target.value)}}/>
-        <span>category</span>
-    </label> 
+    <label for="genres" className="genres-label">Choose a Genre:</label>
+    <select id="genres" name="genres" onChange={(e) => setCategories(e.target.value)} required="true">
+    {allGenres.map((Genre)=>{
+        return(
+
+            <option key={Genre._id}>{Genre.genre}</option>
+
+        )
+    })}
+
+</select>
     <label>
         <input class="input" type="text" placeholder="" required="true" onChange={(e)=>{setCont(e.target.value)}}/>
         <span>count</span>

@@ -60,6 +60,7 @@ function NavBar(props) {
                   <Nav.Link as={Link} to="/Add">Add Book</Nav.Link>
                   <Nav.Link as={Link} to="/Edit">Edit Book</Nav.Link>
                   <Nav.Link as={Link} to="/genres">Edit Genres</Nav.Link>
+                  <Nav.Link as={Link} to="/payment">payment</Nav.Link>
 
                 </>
               )}

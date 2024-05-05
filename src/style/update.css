@@ -1,0 +1,8 @@
+.book-main-info div{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.book-main-info h3{
+    margin-bottom: 30px;
+}

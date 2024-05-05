@@ -1,0 +1,16 @@
+.checkout-cont{
+    display: flex;
+    justify-content: center;
+}
+#payment-form{
+    margin-top: 100px;
+    background-color: white;
+    width: 400px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+#payment-form button{
+    margin-top: 10px;
+}

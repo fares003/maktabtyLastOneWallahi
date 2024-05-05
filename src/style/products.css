@@ -33,10 +33,10 @@ body{
   
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 2rem;
   
     padding: 1rem;
-    width: 14rem;
+    width: 15rem;
     background-color: var(--bg-card) !important;
   
     border-radius: 1rem;
@@ -237,6 +237,17 @@ a{
     width: 80% !important;
     padding: 10px;
   }
+  .sale-price {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  
+  .original-price {
+    text-decoration: line-through;
+    font-size: 15px;
+  }
+  
   @media (max-width: 770px){
     .product-in-products {
       align-items: center;
@@ -245,3 +256,20 @@ a{
   }
   }
  
+  .genres-check{
+    display: flex;
+    width: 100%;
+  }
+  .filter {
+    overflow: auto;
+  display: flex;
+  scroll-snap-type: x mandatory;
+  width: 90%;
+  margin: 30px auto;
+  padding: 0 15px;
+  text-wrap: nowrap;
+  
+  }
+  .genre-check{
+    padding-right:  10px;
+  }

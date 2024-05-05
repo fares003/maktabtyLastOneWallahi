@@ -3,11 +3,10 @@ import NavBar from "../common-components/Navbar";
 import useRefresh from "../hook/useRefresh";
 import axios from "../api/axios";
 import useAxiosPrivate from "../hook/useAxiosPrivate";
-
 import { useParams } from "react-router-dom";
 import Swal from "sweetalert2";
 import { Col, Container, Image, Row } from "react-bootstrap";
-
+import '../style/update.css'
 function Updatebook() {
   const axiosPrivate = useAxiosPrivate();
 
@@ -22,6 +21,8 @@ function Updatebook() {
   const [categories, setCategories] = useState("");
   const [cont, setCont] = useState("");
   const [pages, setPages] = useState("");
+  const [sale, setSale] = useState("");
+
   const refresh = useRefresh();
   const params = useParams();
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 770);
@@ -29,12 +30,12 @@ function Updatebook() {
     const handleResize = () => {
       setIsSmallScreen(window.innerWidth < 770);
     };
-  
-    window.addEventListener('resize', handleResize);
-  
+
+    window.addEventListener("resize", handleResize);
+
     handleResize();
-  
-    return () => window.removeEventListener('resize', handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
   useEffect(() => {
     const fetchProductInfo = async () => {
@@ -70,6 +71,8 @@ function Updatebook() {
         ...(categories && { categories }),
         ...(cont && { cont }),
         ...(pages && { pages }),
+        ...(sale && { sale }),
+
       };
 
       const res = await axiosPrivate.put(`/books/${params.id}`, requestData);
@@ -149,6 +152,18 @@ function Updatebook() {
               </label>
               <label>
                 <input
+                  class="input"
+                  type="text"
+                  placeholder=""
+                  required="true"
+                  onChange={(e) => {
+                    setSale(e.target.value);
+                  }}
+                />
+                <span>Discount%</span>
+              </label>
+              <label>
+                <input
                   className="input"
                   type="text"
                   placeholder=""
@@ -160,6 +175,7 @@ function Updatebook() {
                 />
                 <span>author</span>
               </label>
+
               <label>
                 <input
                   className="input"

@@ -11,7 +11,6 @@ export const CartProvider = ({ children }) => {
     const fetchCart = async () => {
       try {
         const response = await axiosPrivate.get(`/cart/${auth.id}`);
-        console.log('Cart data:', response.data);
         setCart(response.data);
       } catch (error) {
         console.error('Error fetching cart:', error);

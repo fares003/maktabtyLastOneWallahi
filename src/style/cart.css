@@ -80,3 +80,26 @@ margin-bottom: 20px;
         width: 100px;
     }
 }
+.similar img{
+    width: 200px;
+    margin-bottom: 10px;
+}
+.recommend{
+    background-color: white;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.recommend h3{
+   margin-top: 10px;
+   margin-bottom: 30px;
+   color:rgb(142, 0, 0) ;
+}
+.recommend p{
+    font-weight: 600;
+}
+.similar{
+    margin-bottom: 30px;
+    border-bottom:1px solid #ececec ;
+    padding-bottom: 20px;
+}
