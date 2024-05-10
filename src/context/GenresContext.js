@@ -30,9 +30,16 @@ export const GenreProvider = ({ children }) => {
         console.error("Error fetching data:", error);
       }
   };
-
+const deleteGenre=async(id)=>{
+  try {
+    const res = await axiosPrivate.delete(`/genres/${id}`)
+    setAllGenres(res.data)
+  } catch (error) {
+    console.error("Error fetching data:", error);
+  }
+}
   return (
-    <GenresContext.Provider value={{ allGenres, addGenreToDB }}>{children}</GenresContext.Provider>
+    <GenresContext.Provider value={{ allGenres, addGenreToDB ,deleteGenre}}>{children}</GenresContext.Provider>
   );
 };
 

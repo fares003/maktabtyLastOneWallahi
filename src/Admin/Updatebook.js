@@ -7,6 +7,7 @@ import { useParams } from "react-router-dom";
 import Swal from "sweetalert2";
 import { Col, Container, Image, Row } from "react-bootstrap";
 import '../style/update.css'
+import { useGenre } from "../context/GenresContext";
 function Updatebook() {
   const axiosPrivate = useAxiosPrivate();
 
@@ -22,6 +23,7 @@ function Updatebook() {
   const [cont, setCont] = useState("");
   const [pages, setPages] = useState("");
   const [sale, setSale] = useState("");
+  const { allGenres} = useGenre();
 
   const refresh = useRefresh();
   const params = useParams();
@@ -155,7 +157,7 @@ function Updatebook() {
                   class="input"
                   type="text"
                   placeholder=""
-                  required="true"
+                  required={false}
                   onChange={(e) => {
                     setSale(e.target.value);
                   }}
@@ -189,19 +191,19 @@ function Updatebook() {
                 />
                 <span>publisher</span>
               </label>
-              <label>
-                <input
-                  className="input"
-                  type="text"
-                  placeholder=""
-                  required={false}
-                  value={categories}
-                  onChange={(e) => {
-                    setCategories(e.target.value);
-                  }}
-                />
-                <span>category</span>
-              </label>
+              <label className="genress">
+              <label for="genres" className="genres-label">Choose a Genre:</label>
+    <select id="genres" name="genres" onChange={(e) => setCategories(e.target.value)} required="true">
+    {allGenres.map((Genre)=>{
+        return(
+
+            <option key={Genre._id}>{Genre.genre}</option>
+
+        )
+    })}
+    </select>
+
+    </label>
               <label>
                 <input
                   className="input"

@@ -161,11 +161,13 @@ ul{
     margin-left: 10px;
 
 }
+
 @media (max-width: 770px){
     .bar-img {
         width: 100px;
         height: 50px;
   }
+
   .why-us{
     width: 100% !important;
     display: flex;
@@ -186,3 +188,12 @@ ul{
     
   }
   }
+  .user-info-nav img{
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+}  
+.user-info-nav {
+    display: flex;
+    align-items: center;
+}

@@ -33,7 +33,7 @@ function Signup() {
   const [errMsg, setErrMsg] = useState("");
   const [success, setSuccess] = useState(false);
 
-  const [image, setImage] = useState(null);
+  const [image, setImage] = useState("");
 const [imageFocus, setImageFocus] = useState(false);
   const Navigate=useNavigate()
 
@@ -53,12 +53,6 @@ const [imageFocus, setImageFocus] = useState(false);
     setErrMsg("");
   }, [firstname, lastname, pwd, pwdConfirm, email, image]);
   
-  const handleImageChange = (e) => {
-    const file = e.target.files[0];
-    if (file) {
-      setImage(file);
-    }
-  };
 
   
   const handleSubmit = async (e) => {
@@ -83,8 +77,6 @@ const [imageFocus, setImageFocus] = useState(false);
         withCredentials: true,
       });
   
-      console.log(res.data);
-      console.log(res.accessToken);
       setSuccess(true);
       Swal.fire({
         position: "center",
@@ -98,9 +90,11 @@ const [imageFocus, setImageFocus] = useState(false);
       }, 2000);
     } catch (error) {
       if (error.response?.status === 409) {
-        setErrMsg("No server response");
-      } else if (!error.response) {
         setErrMsg("This email is already in use");
+
+      } else if (!error.response) {
+        setErrMsg("No server response");
+
       } else {
         setErrMsg("Registration failed");
       }
@@ -225,11 +219,11 @@ const [imageFocus, setImageFocus] = useState(false);
               </div>
               <div className="inputBox">
   <input
-    type="file"
+    type="text"
     required="required"
     onFocus={() => setImageFocus(true)}
     onBlur={() => setImageFocus(false)}
-    onChange={handleImageChange}
+    onChange={(e)=>setImage(e.target.value)}
     aria-describedby="imageNote"
     autoComplete="false"
   />

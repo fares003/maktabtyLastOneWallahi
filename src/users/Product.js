@@ -16,16 +16,30 @@ import { fetchProduct } from "../rtk/slices/productSlice";
 import { Rating } from "react-simple-star-rating";
 import { capitalize } from "@mui/material";
 import { useCart } from "../context/CartContext";
+import { useBooks } from "../context/GetBooks";
 
 function Product() {
     const params = useParams();
     const [product, setProduct] = useState({});
-    const {addItemToCart}=useCart()
-
+    const { addItemToCart,uniqueBooksMap } = useCart();
+    const { books, getBooks } = useBooks();
 
     const handleAddToCart = (id) => {
-        addItemToCart(id);
-      };
+  const product = books.find((book) => book._id === id);
+    if (!product) {
+      console.error("Product not found");
+      return;
+    }
+    const cartItemCount = uniqueBooksMap[id] || 0;
+    if (cartItemCount < product.cont) {
+      addItemToCart(id);
+    } else {
+      alert("Cannot add more of this item to the cart. Stock limit reached.");
+    }
+};
+useEffect(() => {
+    getBooks("", "");
+  }, []);
 
 
     const refresh = useRefresh();

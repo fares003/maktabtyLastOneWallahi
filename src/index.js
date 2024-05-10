@@ -11,6 +11,7 @@ import { AuthProvider } from './context/AuthProvider';
 import { CartProvider } from './context/CartContext';
 import { GenreProvider } from './context/GenresContext';
 import { BooksProvider } from './context/GetBooks';
+import {OrderProvider} from'./context/OrdersContext'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -20,11 +21,13 @@ root.render(
     <CartProvider>
     <GenreProvider>
     <BooksProvider>
+    <OrderProvider>
     <Provider store={store}>
       
     <App />
     
     </Provider>
+    </OrderProvider>
     </BooksProvider>
     </GenreProvider>
     </CartProvider>

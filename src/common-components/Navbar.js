@@ -12,36 +12,31 @@ import { useEffect, useState } from 'react';
 import { fetchCart } from '../rtk/slices/cartSlice';
 import useAxiosPrivate from '../hook/useAxiosPrivate';
 import { useCart } from '../context/CartContext';
-
+import image5 from '../common-components/images/Blank-Avatar.png'
 function NavBar(props) {
   const { auth } = useAuth();
   const logout = useLogout();
   const navigate = useNavigate(); // Get the navigate function
   const axiosPrivate=useAxiosPrivate()
+  const [userInfoo, setUserInfo] = useState({ image: null }); // Initialize with an object that has an image property
   const {cart}=useCart()
-  console.log(cart)
 
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     try {
-  //       const res = await axiosPrivate.post('/genres', {
-          
-  //           genre: "programming"
-          
-  //       });
-  //       console.log(res.data); // Assuming you want to log the data received
-  //     } catch (error) {
-  //       console.error("Error fetching data:", error);
-  //     }
-  //   };
-  
-  //   fetchData();
-  // }, []);
   const signout = async () => {
     await logout();
-    navigate('/'); // Use navigate function to navigate
+    window.location.reload(false)
+    // Use navigate function to navigate
   };
-
+  const featchUser = async () => {
+    try {
+      const res = await axiosPrivate.get(`/user/${auth.id}`);
+      setUserInfo(res.data);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+  useEffect(()=>{
+    featchUser()
+  },[])
   return (
     <>
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
@@ -55,23 +50,22 @@ function NavBar(props) {
             <Nav.Link as={Link} to="/">Home</Nav.Link>
               <Nav.Link as={Link} to="/products">All books</Nav.Link>
               <Nav.Link as={Link} to="/cart">Cart <span className='num'>{cart.length}</span></Nav.Link>
+              <Nav.Link as={Link} to="/Help">Help</Nav.Link>
+
               {auth && auth.roles && auth.roles.find(role => role === 5150) && (
                 <>
-                  <Nav.Link as={Link} to="/Add">Add Book</Nav.Link>
-                  <Nav.Link as={Link} to="/Edit">Edit Book</Nav.Link>
-                  <Nav.Link as={Link} to="/genres">Edit Genres</Nav.Link>
-                  <Nav.Link as={Link} to="/payment">payment</Nav.Link>
-
+                  <Nav.Link as={Link} to="/inventory">DashBoard</Nav.Link>
                 </>
               )}
             </Nav>
-            <Nav>
+            <Nav className='user-info-nav'>
               {auth.accessToken ? 
                 <button onClick={()=>signout()} className='nav-link'>Log out</button>: 
                 <Nav.Link as={Link} to='/login'>Log in</Nav.Link>
               } 
               <Nav.Link as={Link} to="/signup">Signup</Nav.Link>
-              <h5 className='username'>{auth.firstname} {auth.lastname}</h5>
+              <Nav.Link as={Link} to="/profile" className='username'>{auth.firstname} {auth.lastname}</Nav.Link>
+              <img src={userInfoo.image ? userInfoo.image : image5} alt="Profile" />
             </Nav>
           </Navbar.Collapse>
         </Container>

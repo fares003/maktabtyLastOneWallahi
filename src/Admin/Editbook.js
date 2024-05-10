@@ -94,7 +94,7 @@ return (
                                 <td>{product.title}</td>
                                 <td>{product.author}</td>
                                 <td>{product.price}</td>
-                                <td>{product.count}</td>
+                                <td>{product.cont}</td>
                                 <td><Link to={`/update/${product._id}`} class="btn btn-secondary" role="button">update</Link></td>
                                 <td><Button variant="danger" onClick={()=>{handleDelete(product._id)}}>Delete</Button></td>
                             </tr>

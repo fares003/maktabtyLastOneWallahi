@@ -8,7 +8,7 @@ import Swal from "sweetalert2";
 import { useGenre } from "../context/GenresContext";
 
 function Genres() {
-  const { allGenres, addGenreToDB } = useGenre();
+  const { allGenres, addGenreToDB,deleteGenre } = useGenre();
   const [newGenre, setNewGenre] = useState('');
 
   const handleAddGerne = async () => {
@@ -23,7 +23,27 @@ function Genres() {
     });
     // window.location.reload(false)
   };
+const handleDeleteGenre=async(id)=>{
+  Swal.fire({
+    title: "are you sure you want to delete this genre permanently?",
+    showDenyButton: true,
+    showCancelButton: true,
+    confirmButtonText: "Save",
+    denyButtonText: `Don't save`
+  }).then((result) => {
+    /* Read more about isConfirmed, isDenied below */
+    if (result.isConfirmed) {
+      deleteGenre(id)
+      Swal.fire("Saved!", "", "success");
+      window.location.reload(false)
+      setNewGenre(" ")
+    } else if (result.isDenied) {
+      Swal.fire("Changes are not saved", "", "info");
+    }
+  });
 
+
+}
   return (
     <>
       <NavBar />
@@ -43,7 +63,7 @@ function Genres() {
                   <td>{index + 1}</td>
                   <td>{genre.genre}</td>
                   <td>
-                    <Button variant="danger">Delete</Button>
+                    <Button variant="danger" onClick={()=>handleDeleteGenre(genre._id)}>Delete</Button>
                   </td>
                 </tr>
               ))

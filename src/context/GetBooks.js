@@ -14,12 +14,12 @@ export const BooksProvider = ({ children }) => {
         genreQuery = `${selectedGenres.join(',')}`;
       }
       const response = await axiosPrivate.get(`/books?search=${searchTerm}${genreQuery}`);
-      console.log(response.data);
       setAllbooks(response.data);
     } catch (err) {
       console.error(err);
     }
   }
+
   return (
 <BooksContext.Provider value={{ books, getBooks }}>{children}</BooksContext.Provider>
   );

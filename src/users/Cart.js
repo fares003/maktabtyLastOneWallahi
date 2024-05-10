@@ -8,38 +8,20 @@ import "../style/cart.css";
 import Button from "react-bootstrap/Button";
 import Swal from "sweetalert2";
 import { useBooks } from "../context/GetBooks";
+import { Link } from "react-router-dom";
 
 function Cart() {
-  const { cart ,deleteItemFromCart,deleteAllCart} = useCart();
+  const {cart, uniqueBooks,totalSum ,deleteItemFromCart,deleteAllCart} = useCart();
   const {books,getBooks}=useBooks()
-  console.log(books)
   const habdleDeleteElement=(id)=>{
 deleteItemFromCart(id)
   }
-  const uniqueBooksMap = new Map();
-  cart.forEach((book) => {
-    if (uniqueBooksMap.has(book._id)) {
-      // Increment the count if the book already exists in the map
-      uniqueBooksMap.set(book._id, uniqueBooksMap.get(book._id) + 1);
-    } else {
-      // Add the book to the map with a count of 1 if it doesn't exist
-      uniqueBooksMap.set(book._id, 1);
-    }
 
-  });
-  const uniqueBooks = Array.from(uniqueBooksMap, ([id, count]) => ({
-    ...cart.find((book) => book._id === id),
-    count,
-  }));
-  const totalSum = uniqueBooks.reduce((sum, item) => sum + item.price * item.count, 0);
-  console.log(uniqueBooks)
   useEffect(() => {
     const genres = uniqueBooks.map((book) => book.categories);
-    console.log(genres);
     getBooks(genres, ""); 
   }, [cart]);
   const similarBooks = books.filter((book) => !uniqueBooks.some((uniqueBook) => uniqueBook._id === book._id));
-console.log(similarBooks)
 const handleDeleteAll=()=>{
   
   Swal.fire({
@@ -78,7 +60,7 @@ return (
         <Col className="first" sm={3}>
           <div className="check-out">
             <p>
-              Total Price <span>{totalSum} EG</span>
+              Total Price <span>{totalSum.toFixed(2)} EG</span>
             </p>
             <p>
               Total unique Books count <span>{uniqueBooks.length} Book</span>
@@ -87,31 +69,78 @@ return (
               Total Books count <span>{cart.length} Book</span>
             </p>
             <div className="butt">
-              <Button size="lg">To checkout Process</Button>
+            {cart.length > 0 ? (
+              <div className="buttsOfButts">
+        <Link to="/payment" size="lg" className="btn btn-success" role="button">
+          Pay By credit card
+        </Link>
+         <Link to="/deliveryPay" size="lg" className="btn btn-info" role="button">
+         Pay at delivery
+       </Link>
+       </div>
+      ) : (
+        <button disabled className="btn btn-success" role="button">
+          No items in cart
+        </button>
+      )}
             </div>
           </div>
           <div className="recommend">
-            <h3>You May Also Like</h3>
-            {randomFiveSimilarBooks.map((book) => {
-              return (
-                <div className="similar" key={book._id}>
-                  <img src={book.image} alt={book.title} />
-                  <p>{book.title}</p>
-                  <p className="pricee">{book.price} EG</p>
-                  <Button variant="success" onClick={() => handleAddToCart(book._id)}>Add to cart</Button>
-                </div>
-              );
-            })}
+
+
+          {cart.length > 0 ? (
+  <>
+    <h3>You May Also Like</h3>
+    {randomFiveSimilarBooks.map((book) => {
+      return (
+        <div className="similar" key={book._id}>
+          <img src={book.image} alt={book.title} />
+          <p>{book.title}</p>
+          <p className="pricee">{book.price} EG</p>
+          <Button variant="success" onClick={() => handleAddToCart(book._id)}>Add to cart</Button>
+        </div>
+      );
+    })}
+  </>
+) : (
+<h3 style={{ color: "black" }}>no items in cart</h3>
+)}
+
+
+
+
+           
+          
           </div>
         </Col>
         <Col sm={9}>
           <div className="books">
-            <Button variant="danger" className="mb-3" onClick={() => handleDeleteAll()}>Clear All cart</Button>
+            
+          {cart.length > 0 ? (
+              <Button variant="danger" className="mb-3" onClick={() => handleDeleteAll()}>Clear All cart</Button>
+
+) : (
+  <Button variant="danger" disabled className="mb-3" >No items in cart</Button>
+)}
             {uniqueBooks.map((book) => {
+               let priceElement = (
+                <span className="price">{`$${Math.floor(book.price)}`}</span>
+              );
+              if (book.sale) {
+                const priceBeforeSale = `$${Math.floor(book.price)}`;
+                const priceAfterSale = `$${Math.floor(
+                  book.price * (1 - book.sale / 100)
+                )}`;
+                priceElement = (
+                  <div className="sale-price">
+                    <span className="original-price">{priceBeforeSale}</span>
+                    <span>{priceAfterSale}</span>
+                  </div>
+                );}
               return (
                 <div key={book._id} className="book">
                   <span className="pricee">
-                    {book.price} EG (x{book.count})
+                    {priceElement} EG (x{book.count})
                   </span>
                   <div className="info">
                     <div className="controlles">

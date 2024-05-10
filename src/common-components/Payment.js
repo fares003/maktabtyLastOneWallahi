@@ -1,48 +1,75 @@
-import {loadStripe}from '@stripe/stripe-js'
-import { useEffect, useState } from 'react'
-import useAxiosPrivate from '../hook/useAxiosPrivate'
-import CheckOut from './CheckOut'
-import NavBar from './Navbar'
+import { loadStripe } from '@stripe/stripe-js';
+import { useEffect, useState } from 'react';
+import useAxiosPrivate from '../hook/useAxiosPrivate';
+import CheckOut from './CheckOut';
+import NavBar from './Navbar';
 import { Elements } from '@stripe/react-stripe-js';
-function Payment(){
-    const [stripePromises,setStripePromises]=useState(null)
-    const [clientSecret,setClientSecret]=useState('')
-    const axiosPrivate=useAxiosPrivate()
+import { useCart } from '../context/CartContext';
+
+function Payment() {
+    const [stripePromise, setStripePromise] = useState(null);
+    const [clientSecret, setClientSecret] = useState('');
+    const [loading, setLoading] = useState(true);
+    const axiosPrivate = useAxiosPrivate();
+    const {priceAfterShipping,totalSum}=useCart()
+    let  finalPrice = priceAfterShipping > 0 ? priceAfterShipping * 100 : totalSum * 100;
+
     useEffect(() => {
         const initStripe = async () => {
-            const { data } = await axiosPrivate.get('/config');
-            const publishableKey = data.publishableKey;
-            console.log(publishableKey)
-            setStripePromises(loadStripe(publishableKey));
+            try {
+                const { data } = await axiosPrivate.get('/config');
+                const publishableKey = data.publishableKey;
+                setStripePromise(loadStripe(publishableKey));
+            } catch (error) {
+                console.error('Error initializing Stripe:', error);
+                // Handle error, e.g., show an error message to the user
+            } finally {
+                setLoading(false);
+            }
+            
         };
 
+console.log(priceAfterShipping)
         initStripe();
 
         return () => {
             // Clean up Stripe instance here if needed
         };
     }, [axiosPrivate]);
+    useEffect(()=>{
+finalPrice=priceAfterShipping*100
+    },[priceAfterShipping])
     useEffect(() => {
         const initStripePayment = async () => {
-            const { data } = await axiosPrivate.post('/create-payment-intent', {});
-            const paymentIntentClientSecret = data.clientSecret;
-            console.log(paymentIntentClientSecret)
+            try {
+                
+                console.log(finalPrice);
+                const finalPriceRounded = Math.round(finalPrice);
 
-            setClientSecret(paymentIntentClientSecret);
+                const { data } = await axiosPrivate.post('/create-payment-intent', { amount: finalPriceRounded });
+                const paymentIntentClientSecret = data.clientSecret;
+                setClientSecret(paymentIntentClientSecret);
+            } catch (error) {
+                console.error('Error initializing Stripe payment:', error);
+            }
         };
-
-        initStripePayment();
-    }, [axiosPrivate]);
-return(
-<>
-<NavBar/>
-{stripePromises && clientSecret && (
-    <Elements stripe={stripePromises} options={{ clientSecret }}>
-        <CheckOut />
-    </Elements>
-)}
-
-</>
-)
+    
+        if (!loading) {
+            initStripePayment();
+        }
+    }, [ totalSum, loading]);
+    
+    return (
+        <>
+            <NavBar />
+            {loading && <p>Loading...</p>}
+            {!loading && stripePromise && clientSecret && (
+                <Elements stripe={stripePromise} options={{ clientSecret }}>
+                    <CheckOut />
+                </Elements>
+            )}
+        </>
+    );
 }
-export default Payment
+
+export default Payment;

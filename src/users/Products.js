@@ -23,13 +23,29 @@ function Products() {
   const [searchTerm, setSearchTerm] = useState("");
   const [count, setCount] = useState(5);
   const { auth } = useAuth();
-  const { addItemToCart } = useCart();
+  const { addItemToCart,uniqueBooksMap } = useCart();
   const { allGenres } = useGenre();
   const [selectedGenres, setSelectedGenres] = useState([]);
   const { books, getBooks } = useBooks();
   const handleAddToCart = (id) => {
-    addItemToCart(id);
+    const product = books.find((book) => book._id === id);
+  
+    if (!product) {
+      console.error("Product not found");
+      return;
+    }
+  
+    const cartItemCount = uniqueBooksMap[id] || 0;
+    if (cartItemCount < product.cont) {
+      addItemToCart(id);
+    } else {
+      alert("Cannot add more of this item to the cart. Stock limit reached.");
+    }
   };
+  
+  
+  
+  
   useEffect(() => {
     getBooks(selectedGenres, searchTerm);
   }, [selectedGenres, searchTerm]);
@@ -113,6 +129,9 @@ function Products() {
                           alt={product.title}
                         />
                       </div>
+                      <div className="stock-level">
+                        {product.cont} in stock
+                      </div>
                       <div className="title">
                         <span>{product.title}</span>
                       </div>
@@ -125,6 +144,8 @@ function Products() {
                       <Button
                         className="bttn"
                         onClick={() => handleAddToCart(product._id)}
+                          disabled={product.cont <= 0}
+
                       >
                         + cart <FontAwesomeIcon icon={faCartShopping} />{" "}
                       </Button>
